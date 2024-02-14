@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEditor;
+using UnityEditor;
 
 public class Door : MonoBehaviour {
 
@@ -20,17 +20,17 @@ public class Door : MonoBehaviour {
 
 }
 
-//[CustomEditor(typeof(Door))]
-//public class DoorEditor : Editor {
-//    public override void OnInspectorGUI() {
-//        DrawDefaultInspector();
-//        Door selectedObject = (Door)target;
+[CustomEditor(typeof(Door))]
+public class DoorEditor : Editor {
+    public override void OnInspectorGUI() {
+        DrawDefaultInspector();
+        Door selectedObject = (Door)target;
 
-//        if(GUILayout.Button("Open Door")) {
-//            selectedObject.Open();
-//        }
-//        if(GUILayout.Button("Close Door")) {
-//            selectedObject.Close();
-//        }
-//    }
-//}
+        if(GUILayout.Button("Open Door")) {
+            selectedObject.Open();
+        }
+        if(GUILayout.Button("Close Door")) {
+            selectedObject.Close();
+        }
+    }
+}
