@@ -16,9 +16,9 @@ public class DungeonManager : MonoBehaviour {
     }
 
     Room GetRandomRoom(SelectableRoomsAsset roomsAsset) {
-        return roomsAsset.Rooms[Random.Range(0, roomsAsset.Rooms.Count - 1)];
+        return roomsAsset.Rooms[Random.Range(0, roomsAsset.Rooms.Count)];
     }
-    public List<Room> GetNewRooms(int count) { // temp function
+    public List<Room> GetNewRooms(int count) { // temp function. Don't select the same room more than once per run.
         List<Room> newRooms = new List<Room>();
         for(int i = 0; i < count; i++) {
             newRooms.Add(GetRandomRoom(SelectableRooms));

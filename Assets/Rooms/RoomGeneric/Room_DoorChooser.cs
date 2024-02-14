@@ -20,12 +20,20 @@ public class Room_DoorChooser : Room {
             door.Close();
         }
         yield return new WaitForSeconds(2);
-        foreach(Door door in Doors) {
+        for(int i = 0; i < Doors.Count; i++) {
+            int doorIndex = i;
+            print("activating door of index " + i);
+            print(Doors.Count);
+            print(DoorRooms.Count);
+            Door door = Doors[i];
             door.Open();
 
             void DoorEntered() {
                 // test code
-                DungeonManager.Singleton.GoToRoom(DungeonManager.Singleton.SelectableRooms.Rooms[0]);
+                print("entering room index " + doorIndex.ToString());
+                print(Doors.Count);
+                print(DoorRooms.Count);
+                DungeonManager.Singleton.GoToRoom(DoorRooms[doorIndex]);
             }
             door.DoorEntered.AddListener(DoorEntered);
         }
