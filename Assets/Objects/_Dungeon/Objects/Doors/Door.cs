@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.Events;
 
 public class Door : MonoBehaviour {
 
     public GameObject ClosedState;
     public GameObject OpenState;
+    public GameObject SpawnPoint;
+    public UnityEvent DoorEntered;
 
     public void Open() {
         ClosedState.SetActive(false);

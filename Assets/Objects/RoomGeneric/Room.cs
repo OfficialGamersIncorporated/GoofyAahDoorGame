@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Room : MonoBehaviour {
 
-    public GameObject DoorExit;
-    public GameObject DoorEnterance;
+    public Door DoorExit;
+    public Door DoorEnterance;
 
     void Start() {
 

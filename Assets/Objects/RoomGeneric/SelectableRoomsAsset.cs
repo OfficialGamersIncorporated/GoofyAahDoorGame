@@ -27,8 +27,8 @@ public class SelectableRoomsAssetEditor : Editor {
                 Debug.Log(subDirectory.FullName);
                 foreach(FileInfo file in subDirectory.GetFiles("*.prefab")) {
                     Room foundRoom = AssetDatabase.LoadAssetAtPath<Room>(path + "/" + subDirectory.Name + "/" + file.Name);
-                    Debug.Log(path + "/" + subDirectory.Name);
-                    Debug.Log(foundRoom);
+                    //Debug.Log(path + "/" + subDirectory.Name);
+                    //Debug.Log(foundRoom);
                     if(foundRoom) selectedObject.Rooms.Add(foundRoom);
                 }
 
@@ -38,6 +38,7 @@ public class SelectableRoomsAssetEditor : Editor {
                 //Debug.Log(foundRoom);
                 //if(foundRoom) selectedObject.Rooms.Add(foundRoom);
             }
+            Undo.RecordObject(selectedObject, "auto grab rooms");
         }
     }
 }

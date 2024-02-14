@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
 
+    public static PlayerInput Singleton;
     CharControl charControl;
 
     private void Start() {
+        Singleton = this;
         charControl = GetComponent<CharControl>();
     }
 

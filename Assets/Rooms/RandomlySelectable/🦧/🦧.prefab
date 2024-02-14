@@ -727,6 +727,8 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -767,6 +769,7 @@ TilemapCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919256889213226014}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -790,7 +793,8 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -806,7 +810,7 @@ GameObject:
   - component: {fileID: 5177232943975954119}
   - component: {fileID: 1175115065498471853}
   m_Layer: 0
-  m_Name: "\U0001F92E"
+  m_Name: "\U0001F9A7"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,8 +846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada51ade98a156a40b2c88c04ee70495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorExit: {fileID: 6050410648252814474}
-  DoorEnterance: {fileID: 810273957073090511}
+  DoorExit: {fileID: 57595799571637097}
+  DoorEnterance: {fileID: 4219162353150424614}
 --- !u!1 &2280879891456268752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2178,8 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2263,11 +2269,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3a3d39ed58d433489b1142433812b4a, type: 3}
---- !u!1 &810273957073090511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4358911966200396753, guid: e3a3d39ed58d433489b1142433812b4a, type: 3}
+--- !u!114 &4219162353150424614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 994773550604679736, guid: e3a3d39ed58d433489b1142433812b4a, type: 3}
   m_PrefabInstance: {fileID: 3982128236028333086}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6946606122293946623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279163566963025121, guid: e3a3d39ed58d433489b1142433812b4a, type: 3}
@@ -2330,13 +2342,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+--- !u!114 &57595799571637097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+  m_PrefabInstance: {fileID: 8605765850135585220}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &435222557000276140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8171758357107571048, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
-  m_PrefabInstance: {fileID: 8605765850135585220}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6050410648252814474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2637616380674667854, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
   m_PrefabInstance: {fileID: 8605765850135585220}
   m_PrefabAsset: {fileID: 0}

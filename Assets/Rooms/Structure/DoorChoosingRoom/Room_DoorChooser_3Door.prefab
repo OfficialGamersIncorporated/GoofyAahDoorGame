@@ -1519,6 +1519,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClosedState: {fileID: 2037906556160842620}
   OpenState: {fileID: 3498904681745091893}
+  SpawnPoint: {fileID: 0}
+  DoorEntered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &5463979149155342293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1714,6 +1718,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClosedState: {fileID: 3679944062137271186}
   OpenState: {fileID: 2294385903003899355}
+  SpawnPoint: {fileID: 0}
+  DoorEntered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &9069286692430582115
 PrefabInstance:
   m_ObjectHideFlags: 0
