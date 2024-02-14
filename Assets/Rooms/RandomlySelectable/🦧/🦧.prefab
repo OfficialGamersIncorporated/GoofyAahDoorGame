@@ -809,6 +809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5177232943975954119}
   - component: {fileID: 1175115065498471853}
+  - component: {fileID: 7245722095931036149}
   m_Layer: 0
   m_Name: "\U0001F9A7"
   m_TagString: Untagged
@@ -848,6 +849,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 57595799571637097}
   DoorEnterance: {fileID: 4219162353150424614}
+--- !u!114 &7245722095931036149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452038677420820350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887283ea4717c6445a8d3a691e67c123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2280879891456268752
 GameObject:
   m_ObjectHideFlags: 0

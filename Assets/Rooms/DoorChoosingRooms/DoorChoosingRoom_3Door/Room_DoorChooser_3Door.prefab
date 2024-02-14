@@ -1377,7 +1377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 0}
-  DoorEnterance: {fileID: 0}
+  DoorEnterance: {fileID: 5052424499148189165}
   Doors:
   - {fileID: 755999263091184590}
   - {fileID: 2166206630458485772}
@@ -1386,6 +1386,7 @@ MonoBehaviour:
   - {fileID: 2877603080413656806}
   - {fileID: 697908787026491598}
   - {fileID: 2177417151502215095}
+  DoorRooms: []
 --- !u!1001 &5113684006440515151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1585,6 +1586,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6279163566963025121, guid: e3a3d39ed58d433489b1142433812b4a, type: 3}
   m_PrefabInstance: {fileID: 5463979149155342293}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5052424499148189165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 994773550604679736, guid: e3a3d39ed58d433489b1142433812b4a, type: 3}
+  m_PrefabInstance: {fileID: 5463979149155342293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7615204430519185057
 PrefabInstance:
   m_ObjectHideFlags: 0

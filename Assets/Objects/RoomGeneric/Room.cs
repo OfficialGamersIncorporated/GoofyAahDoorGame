@@ -7,11 +7,16 @@ public class Room : MonoBehaviour {
     public Door DoorExit;
     public Door DoorEnterance;
 
-    void Start() {
 
+    void PlayerReachedExit() {
+        DungeonManager.Singleton.GoToDoorSelectingRoom();
     }
-
-    void Update() {
-
+    private void OnEnable() {
+        if (DoorExit)
+            DoorExit.DoorEntered.AddListener(PlayerReachedExit);
+    }
+    private void OnDisable() {
+        if (DoorExit)
+            DoorExit.DoorEntered.RemoveListener(PlayerReachedExit);
     }
 }
