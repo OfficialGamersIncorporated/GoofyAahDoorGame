@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharControl : MonoBehaviour {
 
     new Rigidbody2D rigidbody;
+    public Weapon HeldWeapon;
 
     public Vector2 MoveDirection;
     public float MaxWalkSpeed = 5;

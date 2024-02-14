@@ -14,5 +14,17 @@ public class PlayerInput : MonoBehaviour {
 
     private void Update() {
         charControl.MoveDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        Weapon heldWeapon = charControl.HeldWeapon;
+        if(heldWeapon) {
+            if(Input.GetButtonDown("Fire1"))
+                heldWeapon.PrimaryFired();
+            if(Input.GetButtonUp("Fire1"))
+                heldWeapon.PrimaryReleased();
+            if(Input.GetButtonDown("Fire2"))
+                heldWeapon.SecondaryFired();
+            if(Input.GetButtonUp("Fire2"))
+                heldWeapon.SecondaryReleased();
+        }
     }
 }
