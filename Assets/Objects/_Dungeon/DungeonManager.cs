@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DungeonManager : MonoBehaviour {
 
@@ -10,7 +11,7 @@ public class DungeonManager : MonoBehaviour {
     [HideInInspector]
     public Room CurrentRoom;
 
-    void Start() {
+    private void Awake() {
         Singleton = this;
         CurrentRoom = FindFirstObjectByType<Room>();
     }
@@ -37,5 +38,8 @@ public class DungeonManager : MonoBehaviour {
     public void DestroyCurrentRoom() {
         if(CurrentRoom)
             Destroy(CurrentRoom.gameObject);
+    }
+    public void RestartDungeon() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

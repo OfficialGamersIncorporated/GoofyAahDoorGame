@@ -7,7 +7,7 @@ public class PlayerInput : MonoBehaviour {
     public static PlayerInput Singleton;
     CharControl charControl;
 
-    private void Start() {
+    private void Awake() {
         Singleton = this;
         charControl = GetComponent<CharControl>();
     }

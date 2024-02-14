@@ -10,10 +10,12 @@ public class Health : MonoBehaviour {
     public bool DestroyOnDeath = true;
 
     public UnityEvent Died;
+    public UnityEvent HealthChanged;
 
     public void ChangeHealth(float healthDelta) {
         HealthCurrent += healthDelta;
         if(HealthCurrent <= 0) Die();
+        HealthChanged.Invoke();
         HealthCurrent = Mathf.Clamp(HealthCurrent, 0, HealthMax);
     }
     void Die() {
