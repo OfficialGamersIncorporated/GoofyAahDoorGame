@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 263850b9180d976449e0959fca060b01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4932129785409856163
+    second: ExplosionAtlas_0
+  - first:
+      213: 2862592265615694821
+    second: ExplosionAtlas_1
+  - first:
+      213: -4413105051057150182
+    second: ExplosionAtlas_2
+  - first:
+      213: -3824851063337418922
+    second: ExplosionAtlas_3
+  - first:
+      213: 3033800355064965386
+    second: ExplosionAtlas_4
+  - first:
+      213: -8937221072804222319
+    second: ExplosionAtlas_5
+  - first:
+      213: 391576550513918027
+    second: ExplosionAtlas_6
+  - first:
+      213: -7522883165462471982
+    second: ExplosionAtlas_7
+  - first:
+      213: 6633486039100383675
+    second: ExplosionAtlas_8
+  - first:
+      213: 5872875499500212030
+    second: ExplosionAtlas_9
+  - first:
+      213: -5781764679380515390
+    second: ExplosionAtlas_10
+  - first:
+      213: -2513365163439138290
+    second: ExplosionAtlas_11
+  - first:
+      213: 5375957709979242142
+    second: ExplosionAtlas_12
+  - first:
+      213: -1884021986637104100
+    second: ExplosionAtlas_13
+  - first:
+      213: -6424883306973663440
+    second: ExplosionAtlas_14
+  - first:
+      213: -2370887739825286962
+    second: ExplosionAtlas_15
+  - first:
+      213: -1498704245420323642
+    second: ExplosionAtlas_16
+  - first:
+      213: -7563185082528120498
+    second: ExplosionAtlas_17
+  - first:
+      213: 3546101761760182063
+    second: ExplosionAtlas_18
+  - first:
+      213: -7620148940597533412
+    second: ExplosionAtlas_19
+  - first:
+      213: 1712520029808516569
+    second: ExplosionAtlas_20
+  - first:
+      213: -1806133883319458507
+    second: ExplosionAtlas_21
+  - first:
+      213: 3460954413817112018
+    second: ExplosionAtlas_22
+  - first:
+      213: 266747986896013377
+    second: ExplosionAtlas_23
+  - first:
+      213: 1169408791775465085
+    second: ExplosionAtlas_24
+  - first:
+      213: 5977576463934104003
+    second: ExplosionAtlas_25
+  - first:
+      213: 7678369277995334597
+    second: ExplosionAtlas_26
+  - first:
+      213: -3474803571905849318
+    second: ExplosionAtlas_27
+  - first:
+      213: -7915380866307306197
+    second: ExplosionAtlas_28
+  - first:
+      213: -1565706841732950239
+    second: ExplosionAtlas_29
+  - first:
+      213: 3044849290874197705
+    second: ExplosionAtlas_30
+  - first:
+      213: -1521366820734858916
+    second: ExplosionAtlas_31
+  - first:
+      213: 449243121194351075
+    second: ExplosionAtlas_32
+  - first:
+      213: -8341771340115984971
+    second: ExplosionAtlas_33
+  - first:
+      213: -3311164729924143921
+    second: ExplosionAtlas_34
+  - first:
+      213: 2037073021875707856
+    second: ExplosionAtlas_35
+  - first:
+      213: 7373157884422669126
+    second: ExplosionAtlas_36
+  - first:
+      213: -3689952736400109104
+    second: ExplosionAtlas_37
+  - first:
+      213: 6534492211932047340
+    second: ExplosionAtlas_38
+  - first:
+      213: 4968688095674978077
+    second: ExplosionAtlas_39
+  - first:
+      213: -7643157157670956400
+    second: ExplosionAtlas_40
+  - first:
+      213: 1401396248312900821
+    second: ExplosionAtlas_41
+  - first:
+      213: 7338643187095802632
+    second: ExplosionAtlas_42
+  - first:
+      213: 4663730918598946575
+    second: ExplosionAtlas_43
+  - first:
+      213: -8407927657032767115
+    second: ExplosionAtlas_44
+  - first:
+      213: 2234610510555655287
+    second: ExplosionAtlas_45
+  - first:
+      213: -7076701243193839316
+    second: ExplosionAtlas_46
+  - first:
+      213: -3511499691795735032
+    second: ExplosionAtlas_47
+  - first:
+      213: -2096608303141999401
+    second: ExplosionAtlas_48
+  - first:
+      213: -3790700548476169277
+    second: ExplosionAtlas_49
+  - first:
+      213: 1379898761487910672
+    second: ExplosionAtlas_50
+  - first:
+      213: -8348418174373887314
+    second: ExplosionAtlas_51
+  - first:
+      213: 8790863620053965726
+    second: ExplosionAtlas_52
+  - first:
+      213: 4919150753536389313
+    second: ExplosionAtlas_53
+  - first:
+      213: -3509886288180472702
+    second: ExplosionAtlas_54
+  - first:
+      213: -8481154778342743128
+    second: ExplosionAtlas_55
+  - first:
+      213: -2591499150163600119
+    second: ExplosionAtlas_56
+  - first:
+      213: -1684565718031792639
+    second: ExplosionAtlas_57
+  - first:
+      213: 3096922794366371068
+    second: ExplosionAtlas_58
+  - first:
+      213: 308430785295216660
+    second: ExplosionAtlas_59
+  - first:
+      213: 2052994273062417368
+    second: ExplosionAtlas_60
+  - first:
+      213: -8822802449495863366
+    second: ExplosionAtlas_61
+  - first:
+      213: 444531731628152234
+    second: ExplosionAtlas_62
+  - first:
+      213: -4404500715506536725
+    second: ExplosionAtlas_63
+  - first:
+      213: -8192670020729571236
+    second: ExplosionAtlas_64
+  - first:
+      213: -5692552832331229482
+    second: ExplosionAtlas_65
+  - first:
+      213: 1643787308727534831
+    second: ExplosionAtlas_66
+  - first:
+      213: -7237654643222151957
+    second: ExplosionAtlas_67
+  - first:
+      213: -6489693015981840577
+    second: ExplosionAtlas_68
+  - first:
+      213: 2543803788000883377
+    second: ExplosionAtlas_69
+  - first:
+      213: 8769905774457405663
+    second: ExplosionAtlas_70
+  - first:
+      213: 4849805691757496181
+    second: ExplosionAtlas_71
+  - first:
+      213: -6490393191142291770
+    second: ExplosionAtlas_72
+  - first:
+      213: -7003630157102121791
+    second: ExplosionAtlas_73
+  - first:
+      213: 7458500130203584796
+    second: ExplosionAtlas_74
+  - first:
+      213: 2465266355081397003
+    second: ExplosionAtlas_75
+  - first:
+      213: -2964763565096520188
+    second: ExplosionAtlas_76
+  - first:
+      213: 5000120939277716514
+    second: ExplosionAtlas_77
+  - first:
+      213: -8917332405037688374
+    second: ExplosionAtlas_78
+  - first:
+      213: -111654708593787715
+    second: ExplosionAtlas_79
+  - first:
+      213: -1570223849676778684
+    second: ExplosionAtlas_80
+  - first:
+      213: -6790338732032480744
+    second: ExplosionAtlas_81
+  - first:
+      213: 5461157490238602116
+    second: ExplosionAtlas_82
+  - first:
+      213: 599819686186338216
+    second: ExplosionAtlas_83
+  - first:
+      213: -8056300346275796461
+    second: ExplosionAtlas_84
+  - first:
+      213: -996480824081984370
+    second: ExplosionAtlas_85
+  - first:
+      213: -5374366336855029237
+    second: ExplosionAtlas_86
+  - first:
+      213: -7686437238753383914
+    second: ExplosionAtlas_87
+  - first:
+      213: -3265023138920811107
+    second: ExplosionAtlas_88
+  - first:
+      213: -105717639962583303
+    second: ExplosionAtlas_89
+  - first:
+      213: -4347082643763729115
+    second: ExplosionAtlas_90
+  - first:
+      213: -7880874310245993166
+    second: ExplosionAtlas_91
+  - first:
+      213: -912850673882065013
+    second: ExplosionAtlas_92
+  - first:
+      213: 6527282295363484619
+    second: ExplosionAtlas_93
+  - first:
+      213: -3439476941766458257
+    second: ExplosionAtlas_94
+  - first:
+      213: -269727201115288838
+    second: ExplosionAtlas_95
+  - first:
+      213: -1728785656291287268
+    second: ExplosionAtlas_96
+  - first:
+      213: 8276994939024563454
+    second: ExplosionAtlas_97
+  - first:
+      213: 439827836742478271
+    second: ExplosionAtlas_98
+  - first:
+      213: -5578085051429678283
+    second: ExplosionAtlas_99
+  - first:
+      213: -3147103390759617318
+    second: ExplosionAtlas_100
+  - first:
+      213: -269236682282393851
+    second: ExplosionAtlas_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 480
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplosionAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a26a7588e1727440800000000000000
+      internalID: 4932129785409856163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2400
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebddc8bf78f9b720800000000000000
+      internalID: 2862592265615694821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2400
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17a143765081c2c0800000000000000
+      internalID: -4413105051057150182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2400
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f7ffa09366beac0800000000000000
+      internalID: -3824851063337418922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2400
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09e91369593a1a20800000000000000
+      internalID: 3033800355064965386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a6e5429cc98f380800000000000000
+      internalID: -8937221072804222319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4041cb4cc82f6500800000000000000
+      internalID: 391576550513918027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dad7d37e99599790800000000000000
+      internalID: -7522883165462471982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb167172860ee0c50800000000000000
+      internalID: 6633486039100383675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f0ec5a625a08150800000000000000
+      internalID: 5872875499500212030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5cf9e38ab03cfa0800000000000000
+      internalID: -5781764679380515390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a5e5243bbbe1dd0800000000000000
+      internalID: -2513365163439138290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ec5dedd0d3b9a40800000000000000
+      internalID: 5375957709979242142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c38713cfb9ad5e0800000000000000
+      internalID: -1884021986637104100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f6f7c3caa36d6a0800000000000000
+      internalID: -6424883306973663440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec09261892ae81fd0800000000000000
+      internalID: -2370887739825286962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc0a54ed68833be0800000000000000
+      internalID: -1498704245420323642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c0692d3b2a0790800000000000000
+      internalID: -7563185082528120498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f3a17a3c8463130800000000000000
+      internalID: 3546101761760182063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c156d1c69eacf3690800000000000000
+      internalID: -7620148940597533412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd5a7fc4e714c710800000000000000
+      internalID: 1712520029808516569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53562fb6dc25fe6e0800000000000000
+      internalID: -1806133883319458507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5a363d3b7c70030800000000000000
+      internalID: 3460954413817112018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148cc7b71eda3b300800000000000000
+      internalID: 266747986896013377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ecefea9139a3010800000000000000
+      internalID: 1169408791775465085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c127869f1e94f250800000000000000
+      internalID: 5977576463934104003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb3f253d2c0f8a60800000000000000
+      internalID: 7678369277995334597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a181b48cf8407cfc0800000000000000
+      internalID: -3474803571905849318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d44d12a0be62290800000000000000
+      internalID: -7915380866307306197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127db144ced754ae0800000000000000
+      internalID: -1565706841732950239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c618293c4a714a20800000000000000
+      internalID: 3044849290874197705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c598805efe403eae0800000000000000
+      internalID: -1521366820734858916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9b3901d380c3600800000000000000
+      internalID: 449243121194351075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd3adaa9231c3c80800000000000000
+      internalID: -8341771340115984971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c9ca74ccf13fba041908af58fce4e16e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ExplosionAtlas_0: 4932129785409856163
+      ExplosionAtlas_1: 2862592265615694821
+      ExplosionAtlas_10: -5781764679380515390
+      ExplosionAtlas_11: -2513365163439138290
+      ExplosionAtlas_12: 5375957709979242142
+      ExplosionAtlas_13: -1884021986637104100
+      ExplosionAtlas_14: -6424883306973663440
+      ExplosionAtlas_15: -2370887739825286962
+      ExplosionAtlas_16: -1498704245420323642
+      ExplosionAtlas_17: -7563185082528120498
+      ExplosionAtlas_18: 3546101761760182063
+      ExplosionAtlas_19: -7620148940597533412
+      ExplosionAtlas_2: -4413105051057150182
+      ExplosionAtlas_20: 1712520029808516569
+      ExplosionAtlas_21: -1806133883319458507
+      ExplosionAtlas_22: 3460954413817112018
+      ExplosionAtlas_23: 266747986896013377
+      ExplosionAtlas_24: 1169408791775465085
+      ExplosionAtlas_25: 5977576463934104003
+      ExplosionAtlas_26: 7678369277995334597
+      ExplosionAtlas_27: -3474803571905849318
+      ExplosionAtlas_28: -7915380866307306197
+      ExplosionAtlas_29: -1565706841732950239
+      ExplosionAtlas_3: -3824851063337418922
+      ExplosionAtlas_30: 3044849290874197705
+      ExplosionAtlas_31: -1521366820734858916
+      ExplosionAtlas_32: 449243121194351075
+      ExplosionAtlas_33: -8341771340115984971
+      ExplosionAtlas_34: -3311164729924143921
+      ExplosionAtlas_35: 2037073021875707856
+      ExplosionAtlas_4: 3033800355064965386
+      ExplosionAtlas_5: -8937221072804222319
+      ExplosionAtlas_6: 391576550513918027
+      ExplosionAtlas_7: -7522883165462471982
+      ExplosionAtlas_8: 6633486039100383675
+      ExplosionAtlas_9: 5872875499500212030
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

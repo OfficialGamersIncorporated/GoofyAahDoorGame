@@ -22,17 +22,11 @@ public class Room_DoorChooser : Room {
         yield return new WaitForSeconds(2);
         for(int i = 0; i < Doors.Count; i++) {
             int doorIndex = i;
-            print("activating door of index " + i);
-            print(Doors.Count);
-            print(DoorRooms.Count);
             Door door = Doors[i];
             door.Open();
 
             void DoorEntered() {
                 // test code
-                print("entering room index " + doorIndex.ToString());
-                print(Doors.Count);
-                print(DoorRooms.Count);
                 DungeonManager.Singleton.GoToRoom(DoorRooms[doorIndex]);
             }
             door.DoorEntered.AddListener(DoorEntered);

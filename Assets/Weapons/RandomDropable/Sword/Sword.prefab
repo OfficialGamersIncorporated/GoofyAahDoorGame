@@ -243,6 +243,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953d0882d7ed633489c05c7e0be054b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PrimaryFireAttackTrigger: {fileID: 5239603516693415606}
+  SecondaryFireAttackTrigger: {fileID: 0}
+  PrimaryFireProjectilePrefab: {fileID: 0}
+  SecondaryFireProjectilePrefab: {fileID: 0}
+  PrimaryAttackTriggerDamage: 1
+  SecondaryAttackTriggerDamage: 1
 --- !u!95 &7363628066303389567
 Animator:
   serializedVersion: 7
