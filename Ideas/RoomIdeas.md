@@ -12,3 +12,4 @@
 - eye contact with woman
 - pacman game
 - stonks down
+- disco (dance for 30 seconds)
