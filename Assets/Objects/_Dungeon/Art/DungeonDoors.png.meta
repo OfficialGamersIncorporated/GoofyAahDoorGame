@@ -3,7 +3,7 @@ guid: f13aa6d874585c44cba6e3f6632a8639
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -123,7 +123,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DungeonDoors_Bottom
+      name: DungeonDoors_Closed_Bottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572a1d2ad48f3f244a9bbfdfb820fe85
+      internalID: 1655997187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DungeonDoors_Closed_Top
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcbef101447ded439051bc45335f23b
+      internalID: 535365501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DungeonDoors_Open_Bottom
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0c314fc210a6214c8da70f38b761f9c
-      internalID: 1981769957
+      spriteID: 4464a9f48d3169642856b2239f950efb
+      internalID: 875742943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DungeonDoors_Top
+      name: DungeonDoors_Open_Top
       rect:
         serializedVersion: 2
         x: 256
@@ -158,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 852f7871c61997c4d979071fe26d34b0
-      internalID: 2036276331
+      spriteID: 43b1535266fe2d04188bba31b4d59a7e
+      internalID: 1670351956
       vertices: []
       indices: 
       edges: []
@@ -175,8 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DungeonDoors_Bottom: 1981769957
-      DungeonDoors_Top: 2036276331
+      DungeonDoors_Closed_Bottom: 1655997187
+      DungeonDoors_Closed_Top: 535365501
+      DungeonDoors_Open_Bottom: 875742943
+      DungeonDoors_Open_Top: 1670351956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
