@@ -21,7 +21,7 @@ public class TestPlayerMovement : MonoBehaviour
         PlayerInputHoriziontal = Input.GetAxis("Horizontal");
         PlayerInputVertical = Input.GetAxis("Vertical");
 
-        movementVector = moveSpeed * Time.deltaTime * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+        movementVector = moveSpeed * Time.deltaTime * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0).normalized;
 
         if (movementVector != Vector3.zero)
         {
