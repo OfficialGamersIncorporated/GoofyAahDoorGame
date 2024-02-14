@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4945275421440183799}
   - component: {fileID: 5239603516693415606}
+  - component: {fileID: 4892289037689975548}
   m_Layer: 0
   m_Name: PrimaryAttackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4945275421440183799
 Transform:
   m_ObjectHideFlags: 0
@@ -78,6 +79,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4892289037689975548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28256392885606531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bda81135a766e4abbb154b62d8fcbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+  PhysicsImpulse: 20
+  HitEnemies: 1
+  HitAllies: 0
 --- !u!1 &2668391621489387484
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,8 +264,6 @@ MonoBehaviour:
   SecondaryFireAttackTrigger: {fileID: 0}
   PrimaryFireProjectilePrefab: {fileID: 0}
   SecondaryFireProjectilePrefab: {fileID: 0}
-  PrimaryAttackTriggerDamage: 1
-  SecondaryAttackTriggerDamage: 1
 --- !u!95 &7363628066303389567
 Animator:
   serializedVersion: 7

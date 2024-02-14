@@ -289,6 +289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a090fdfb41b2442888b33bfc420424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Button: {fileID: 6755390562537298220}
+  BombPrefab: {fileID: 7663353902905408054, guid: 377a2754e74435849877ff47b43767d2, type: 3}
+  BombLaunchForce: 5
+  BombFuseTime: 1
 --- !u!1 &8489806165456917747
 GameObject:
   m_ObjectHideFlags: 0

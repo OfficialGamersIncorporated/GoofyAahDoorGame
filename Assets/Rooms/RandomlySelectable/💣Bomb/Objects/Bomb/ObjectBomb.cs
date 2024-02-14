@@ -13,8 +13,4 @@ public class ObjectBomb : MonoBehaviour {
         Explosion.transform.SetParent(null);
         Destroy(gameObject);
     }
-
-    public void test() {
-
-    }
 }

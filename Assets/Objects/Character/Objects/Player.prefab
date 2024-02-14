@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6991628186067721382}
   - component: {fileID: 3317931786680139307}
   - component: {fileID: 2725205746361749952}
+  - component: {fileID: 4255212216591117623}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -129,6 +130,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03d68a8c3d6d2c4a84e4ba47c15188c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4255212216591117623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612162741110048717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12a02219954b8f4cbe155ea6d4ef8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthCurrent: 3
+  HealthMax: 3
+  DestroyOnDeath: 1
+  Died:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8110191792987988715
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +242,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3671608626568280774}
     m_Modifications:
+    - target: {fileID: 28256392885606531, guid: 5a4040094dae23444a1dce6f5864564a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8468489077037866593, guid: 5a4040094dae23444a1dce6f5864564a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
