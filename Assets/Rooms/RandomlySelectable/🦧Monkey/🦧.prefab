@@ -849,6 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 57595799571637097}
   DoorEnterance: {fileID: 4219162353150424614}
+  DeathScreenMessages: []
 --- !u!114 &7245722095931036149
 MonoBehaviour:
   m_ObjectHideFlags: 0

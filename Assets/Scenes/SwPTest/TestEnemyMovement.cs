@@ -4,45 +4,48 @@ using UnityEngine;
 
 public class TestEnemyMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public Collider2D col;
+    Rigidbody2D rb;
+    Collider2D col;
+    CharControl charControl;
 
-    public GameObject target;
+    GameObject target;
 
-    public float acceleration;
-    public float decceleration;
-    public float maxSpeed;
-    public float rotateSpeed;
+    public float acceleration = 30;
+    public float decceleration = 60;
+    public float maxSpeed = 5;
+    public float rotateSpeed = 10;
+    public float RotationOffset = -90f;
 
-    public float targetAngle;
-    public float dotProduct;
-    public Vector2 lookVector;
-    public Vector2 targetDirection;
+    //float targetAngle;
+    //float dotProduct;
+    Vector2 lookVector;
+    Vector2 targetDirection;
 
-    public Vector2 currentVelocity;
+    //Vector2 currentVelocity;
 
-    private void Start()
-    {
+    private void Start() {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        charControl = GetComponent<CharControl>();
 
         target = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Update()
-    {
+    private void Update() {
+        if(!target) target = GameObject.FindGameObjectWithTag("Player");
+        if(!target) return;
+
         targetDirection = (target.transform.position - transform.position);
         lookVector = (target.transform.position - transform.position).normalized;
-        targetAngle = (Mathf.Atan2(lookVector.y, lookVector.x) * Mathf.Rad2Deg) - 90f;
+        float targetAngle = (Mathf.Atan2(lookVector.y, lookVector.x) * Mathf.Rad2Deg) - RotationOffset;
 
-        dotProduct = Vector2.Dot(transform.up, lookVector);
-        currentVelocity = rb.velocity;
+        //dotProduct = Vector2.Dot(transform.up, lookVector);
+        //currentVelocity = rb.velocity;
 
         gameObject.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.AngleAxis(targetAngle, Vector3.forward), Time.deltaTime * rotateSpeed);
     }
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() {
 
         // fly towards target
         //if (rb.velocity.magnitude < maxSpeed && dotProduct > 0.9f)
@@ -55,7 +58,10 @@ public class TestEnemyMovement : MonoBehaviour
         //}
 
         // Move Directly to target
-        rb.velocity = targetDirection.normalized * maxSpeed;
+        if(charControl)
+            charControl.MoveDirection = Vector2.ClampMagnitude(targetDirection, 1);
+        else
+            rb.velocity = targetDirection.normalized * maxSpeed;
 
         // Predict target position
         // Vector3.ProjectOnPlane

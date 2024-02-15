@@ -278,9 +278,9 @@ MonoBehaviour:
   DoorExit: {fileID: 4954798273299618103}
   DoorEnterance: {fileID: 769056253255551009}
   DeathScreenMessages:
-  - How did you not see that one coming?
+  - What did you expect?
   - Really?
-  - Well you were warned.
+  - Well, you were warned.
 --- !u!114 &6305343387119649659
 MonoBehaviour:
   m_ObjectHideFlags: 0

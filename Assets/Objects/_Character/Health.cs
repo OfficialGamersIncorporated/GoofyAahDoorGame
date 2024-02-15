@@ -25,8 +25,9 @@ public class Health : MonoBehaviour {
         foreach(Rigidbody2D gibPrefab in GibsPrefabs) {
             Rigidbody2D gib = Instantiate<Rigidbody2D>(gibPrefab);
             gib.transform.SetParent(transform.parent);
-            gib.transform.position = transform.position;
-            gib.velocity = Vector3.ProjectOnPlane(Random.onUnitSphere, Vector3.forward) * GibsMaxEjectionForce;
+            Vector2 spawnBump = Vector3.ProjectOnPlane(Random.onUnitSphere, Vector3.forward);
+            gib.transform.position = transform.position + (Vector3)spawnBump.normalized;
+            gib.velocity = spawnBump * GibsMaxEjectionForce;
         }
         Died.Invoke();
         //TODO death animations?

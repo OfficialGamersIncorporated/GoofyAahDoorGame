@@ -8,12 +8,17 @@ public class DungeonManager : MonoBehaviour {
     public static DungeonManager Singleton;
     public SelectableRoomsAsset SelectableRooms;
     public SelectableRoomsAsset DoorChoosingRooms;
+    public float PlayerEnterRoomSpeed = 10;
     [HideInInspector]
     public Room CurrentRoom;
 
     private void Awake() {
         Singleton = this;
         CurrentRoom = FindFirstObjectByType<Room>();
+    }
+    private void Start() {
+        if (CurrentRoom)
+            StartCoroutine(_EnterRoom(CurrentRoom));
     }
 
     Room GetRandomRoom(SelectableRoomsAsset roomsAsset) {
@@ -29,11 +34,29 @@ public class DungeonManager : MonoBehaviour {
     public void GoToDoorSelectingRoom() {
         GoToRoom(GetRandomRoom(DoorChoosingRooms));
     }
+    private IEnumerator _EnterRoom(Room existingRoom) {
+        PlayerInput player = PlayerInput.Singleton;
+        Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
+        Door enterance = existingRoom.DoorEnterance;
+
+        player.gameObject.SetActive(false);
+        yield return new WaitForSeconds(.5f);
+        enterance.Open();
+        yield return new WaitForSeconds(.5f);
+        player.gameObject.SetActive(true);
+
+        player.transform.position = enterance.SpawnPoint.transform.position;
+        playerRB.velocity = enterance.FacingNormal * PlayerEnterRoomSpeed;
+
+        yield return new WaitForSeconds(.25f);
+        enterance.Close();
+    }
     public void GoToRoom(Room roomPrefab) {
         DestroyCurrentRoom();
         Room newRoom = Instantiate<Room>(roomPrefab);
         CurrentRoom = newRoom;
-        PlayerInput.Singleton.transform.position = newRoom.DoorEnterance.SpawnPoint.transform.position;
+
+        StartCoroutine(_EnterRoom(newRoom));
     }
     public void DestroyCurrentRoom() {
         if(CurrentRoom)

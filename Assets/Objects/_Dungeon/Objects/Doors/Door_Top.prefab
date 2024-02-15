@@ -64,6 +64,7 @@ MonoBehaviour:
   ClosedState: {fileID: 6539065810337639731}
   OpenState: {fileID: 8537118208969522042}
   SpawnPoint: {fileID: 5537962598185916190}
+  FacingNormal: {x: 0, y: -1}
   DoorEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -189,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 5537962598185916190}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

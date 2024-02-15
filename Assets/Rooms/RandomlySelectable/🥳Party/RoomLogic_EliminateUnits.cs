@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomLogic_Party : RoomLogic {
+public class RoomLogic_EliminateUnits : RoomLogic {
 
-    public List<Health> Babies;
+    public List<Health> Units;
 
     private void Update() {
-        foreach(Health baby in Babies) {
+        foreach(Health baby in Units) {
             if(baby != null) return;
         }
 

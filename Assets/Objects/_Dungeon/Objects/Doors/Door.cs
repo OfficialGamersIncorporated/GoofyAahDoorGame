@@ -10,12 +10,14 @@ public class Door : MonoBehaviour {
     public GameObject ClosedState;
     public GameObject OpenState;
     public GameObject SpawnPoint;
+    public Vector2 FacingNormal;
     public UnityEvent DoorEntered;
 
     private void Start() {
         OpenSound = GetComponent<AudioSource>();
     }
     public void Open() {
+        print("OPEN DOOR?");
         if (OpenSound)
             OpenSound.Play();
         ClosedState.SetActive(false);

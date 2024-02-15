@@ -1378,6 +1378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 0}
   DoorEnterance: {fileID: 5052424499148189165}
+  DeathScreenMessages: []
   Doors:
   - {fileID: 755999263091184590}
   - {fileID: 2166206630458485772}
@@ -1521,6 +1522,7 @@ MonoBehaviour:
   ClosedState: {fileID: 2037906556160842620}
   OpenState: {fileID: 3498904681745091893}
   SpawnPoint: {fileID: 0}
+  FacingNormal: {x: 0, y: 0}
   DoorEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1731,6 +1733,7 @@ MonoBehaviour:
   ClosedState: {fileID: 3679944062137271186}
   OpenState: {fileID: 2294385903003899355}
   SpawnPoint: {fileID: 0}
+  FacingNormal: {x: 0, y: 0}
   DoorEntered:
     m_PersistentCalls:
       m_Calls: []

@@ -46,4 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectableRooms: {fileID: 11400000, guid: 9cafed73459b9944789a2996d6e1aedd, type: 2}
   DoorChoosingRooms: {fileID: 11400000, guid: a8f04cd2ef95c344280209cd1fbb54a6, type: 2}
+  PlayerEnterRoomSpeed: 10
   CurrentRoom: {fileID: 0}
