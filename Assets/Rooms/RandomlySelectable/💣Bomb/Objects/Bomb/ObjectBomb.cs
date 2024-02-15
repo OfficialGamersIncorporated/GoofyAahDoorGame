@@ -8,6 +8,7 @@ public class ObjectBomb : MonoBehaviour {
     public float FuseTime = 3;
 
     IEnumerator Start() {
+        yield return new WaitForEndOfFrame(); // give the spawner enough time to set FuseTime
         yield return new WaitForSeconds(FuseTime);
         Explosion.SetActive(true);
         Explosion.transform.SetParent(null);

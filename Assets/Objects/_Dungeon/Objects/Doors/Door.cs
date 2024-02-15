@@ -6,16 +6,24 @@ using UnityEngine.Events;
 
 public class Door : MonoBehaviour {
 
+    AudioSource OpenSound;
     public GameObject ClosedState;
     public GameObject OpenState;
     public GameObject SpawnPoint;
     public UnityEvent DoorEntered;
 
+    private void Start() {
+        OpenSound = GetComponent<AudioSource>();
+    }
     public void Open() {
+        if (OpenSound)
+            OpenSound.Play();
         ClosedState.SetActive(false);
         OpenState.SetActive(true);
     }
     public void Close() {
+        if(OpenSound)
+            OpenSound.Play();
         OpenState.SetActive(false);
         ClosedState.SetActive(true);
     }

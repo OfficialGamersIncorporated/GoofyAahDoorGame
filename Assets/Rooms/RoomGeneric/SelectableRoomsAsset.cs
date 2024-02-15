@@ -39,6 +39,7 @@ public class SelectableRoomsAssetEditor : Editor {
                 //if(foundRoom) selectedObject.Rooms.Add(foundRoom);
             }
             Undo.RecordObject(selectedObject, "auto grab rooms");
+            EditorUtility.SetDirty(selectedObject);
         }
     }
 }

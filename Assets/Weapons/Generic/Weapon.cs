@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class Weapon : MonoBehaviour {
 
     Animator animator;
+    AudioSource swingSound;
     public Collider2D PrimaryFireAttackTrigger;
     public Collider2D SecondaryFireAttackTrigger;
     public Rigidbody PrimaryFireProjectilePrefab;
@@ -13,6 +14,7 @@ public class Weapon : MonoBehaviour {
 
     private void Start() {
         animator = GetComponent<Animator>();
+        swingSound = GetComponent<AudioSource>();
     }
     private void Update() {
         Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -25,6 +27,9 @@ public class Weapon : MonoBehaviour {
     public virtual void PrimaryFired() {
         if (animator)
             animator.SetTrigger("PrimaryAttack");
+
+        if(swingSound)
+            swingSound.Play();
 
         if(PrimaryFireAttackTrigger)
             PrimaryFireAttackTrigger.gameObject.SetActive(true);

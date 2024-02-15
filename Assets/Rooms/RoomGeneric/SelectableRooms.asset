@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385a21aaa414f934e9a53d78b2b53b71, type: 3}
   m_Name: SelectableRooms
   m_EditorClassIdentifier: 
-  Rooms: []
+  Rooms:
+  - {fileID: 5845520100845383676, guid: 9626d13770b46cf4b9de5ea9dd38a07d, type: 3}
+  - {fileID: 4979863683330635949, guid: bad3495b07796404baf6edcfd248a126, type: 3}
+  - {fileID: 7955011645057530255, guid: ca1563c9fe407ba4fba6cc5a99cbb8c4, type: 3}
+  - {fileID: 1175115065498471853, guid: e3b4a0247b4056045903f1e083b76c4e, type: 3}

@@ -217,7 +217,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -277,6 +277,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 4954798273299618103}
   DoorEnterance: {fileID: 769056253255551009}
+  DeathScreenMessages:
+  - How did you not see that one coming?
+  - Really?
+  - Well you were warned.
 --- !u!114 &6305343387119649659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,7 +296,7 @@ MonoBehaviour:
   Button: {fileID: 6755390562537298220}
   BombPrefab: {fileID: 7663353902905408054, guid: 377a2754e74435849877ff47b43767d2, type: 3}
   BombLaunchForce: 5
-  BombFuseTime: 1
+  BombFuseTime: 0.6666667
 --- !u!1 &8489806165456917747
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +711,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -954,13 +958,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7080158194793665761}
     m_Modifications:
+    - target: {fileID: 396149066241861363, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2654580924202356430, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2654580924202356430, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2654580924202356430, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -995,11 +1003,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: HealthMax
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: HealthCurrent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
       propertyPath: DestroyOnDeath
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
       propertyPath: Died.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: HealthChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
@@ -1016,6 +1036,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
       propertyPath: Died.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonPushed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: HealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6305343387119649659}
+    - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: HealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
+      propertyPath: HealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonPushed
       objectReference: {fileID: 0}
     - target: {fileID: 2885482248521016413, guid: 9d918ffe0bcd87440b5f5149afaa1a99, type: 3}
