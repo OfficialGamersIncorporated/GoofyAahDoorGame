@@ -11,6 +11,7 @@ public class SelectableRoomsAsset : ScriptableObject {
 
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(SelectableRoomsAsset))]
 public class SelectableRoomsAssetEditor : Editor {
     public override void OnInspectorGUI() {
@@ -43,3 +44,4 @@ public class SelectableRoomsAssetEditor : Editor {
         }
     }
 }
+#endif

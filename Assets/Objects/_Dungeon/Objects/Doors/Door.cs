@@ -44,6 +44,7 @@ public class Door : MonoBehaviour {
 
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(Door))]
 public class DoorEditor : Editor {
     public override void OnInspectorGUI() {
@@ -58,3 +59,4 @@ public class DoorEditor : Editor {
         }
     }
 }
+#endif

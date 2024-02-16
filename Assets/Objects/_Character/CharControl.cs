@@ -8,9 +8,14 @@ public class CharControl : MonoBehaviour {
     public Weapon HeldWeapon;
 
     public Vector2 MoveDirection;
+    public Vector2 LookDirection;
     public float MaxWalkSpeed = 5;
     public float Acceleration = 30;
     public float Deceleration = 60;
+
+    public enum TargetFaceModeType { Flip, Rotate };
+    public TargetFaceModeType TargetFaceMode = TargetFaceModeType.Flip;
+
 
     void Start() {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -21,5 +26,14 @@ public class CharControl : MonoBehaviour {
             rateOfChange = Deceleration;
 
         rigidbody.velocity = Vector3.MoveTowards(rigidbody.velocity, MoveDirection * MaxWalkSpeed, rateOfChange * Time.fixedDeltaTime);
+
+        if(TargetFaceMode == TargetFaceModeType.Flip) {
+            float flipMultiplier = -1;
+            if(LookDirection.x < 0) flipMultiplier = 1;
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * flipMultiplier, transform.localScale.y, transform.localScale.z);
+        } else {
+            transform.LookAt(transform.position + (Vector3)LookDirection, Vector3.forward);
+            transform.rotation *= Quaternion.Euler(-90,0,0);
+        }
     }
 }

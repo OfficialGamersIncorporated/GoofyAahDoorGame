@@ -25,7 +25,10 @@ public class GenericEnemyAI : MonoBehaviour {
     }
     void Update() {
         if(!target) target = GameObject.FindGameObjectWithTag("Player");
-        if(!target) return;
+        if(!target) {
+            charControl.MoveDirection = Vector2.zero;
+            return;
+        }
 
         Vector2 towardsTargetVector = target.transform.position - transform.position;
         Vector2 orbitTargetVector = Vector3.Cross(towardsTargetVector, Vector3.forward);
@@ -34,5 +37,6 @@ public class GenericEnemyAI : MonoBehaviour {
         Vector2 orbitTargetContribution = orbitTargetVector * (OrbitTargetLinear + Mathf.Cos(Time.time * OrbitTargetSinFrequency) * OrbitTargetSinAmplitude);
 
         charControl.MoveDirection = Vector2.ClampMagnitude(towardsTargetContribution + orbitTargetContribution, 1);
+        charControl.LookDirection = towardsTargetVector.normalized;
     }
 }

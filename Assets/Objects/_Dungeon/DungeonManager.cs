@@ -16,12 +16,14 @@ public class DungeonManager : MonoBehaviour {
     private void Awake() {
         Singleton = this;
         CurrentRoom = FindFirstObjectByType<Room>();
-    }
-    private void Start() {
-        if (CurrentRoom)
+
+        if(CurrentRoom)
             StartCoroutine(_EnterRoom(CurrentRoom));
         if(!CurrentRoom)
             GoToRoom(StartRoomPrefab);
+    }
+    private void Start() {
+        
     }
 
     Room GetRandomRoom(SelectableRoomsAsset roomsAsset) {
