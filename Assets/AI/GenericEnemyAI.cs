@@ -38,5 +38,12 @@ public class GenericEnemyAI : MonoBehaviour {
 
         charControl.MoveDirection = Vector2.ClampMagnitude(towardsTargetContribution + orbitTargetContribution, 1);
         charControl.LookDirection = towardsTargetVector.normalized;
+
+        if(charControl.HeldWeapon) {
+            charControl.HeldWeapon.PrimaryFired();
+            charControl.HeldWeapon.PrimaryReleased();
+            charControl.HeldWeapon.SecondaryFired();
+            charControl.HeldWeapon.SecondaryReleased();
+        }
     }
 }

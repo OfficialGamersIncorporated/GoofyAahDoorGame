@@ -18,10 +18,10 @@ public class SelectableRoomsAssetEditor : Editor {
         DrawDefaultInspector();
         SelectableRoomsAsset selectedObject = (SelectableRoomsAsset)target;
 
-        if(GUILayout.Button("Grab from Assets/Rooms/RandomlySelectable")) {
+        if(GUILayout.Button("Grab from Assets/Rooms/_RandomlySelectable")) {
             selectedObject.Rooms = new List<Room>();
 
-            string path = "Assets/Rooms/RandomlySelectable"; // Application.dataPath
+            string path = "Assets/Rooms/_RandomlySelectable"; // Application.dataPath
             //Debug.Log(path);
             DirectoryInfo directoryInfo = new DirectoryInfo(path);
             foreach(DirectoryInfo subDirectory in directoryInfo.GetDirectories()) {
