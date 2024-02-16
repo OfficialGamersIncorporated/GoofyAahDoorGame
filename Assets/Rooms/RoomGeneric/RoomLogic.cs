@@ -11,7 +11,8 @@ public class RoomLogic : MonoBehaviour {
         room = GetComponent<Room>();
     }
     protected void OpenExitDoor() {
-        room.DoorExit.Open();
+        if (room.DoorExit)
+            room.DoorExit.Open();
     }
     private IEnumerator _OpenExitWithDelay(float delay) {
         yield return new WaitForSeconds(delay);

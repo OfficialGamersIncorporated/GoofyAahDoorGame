@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3136911368608758753}
   - component: {fileID: 5644637074746869637}
+  - component: {fileID: 1389205792253069297}
   m_Layer: 0
   m_Name: "\u2753"
   m_TagString: Untagged
@@ -52,6 +53,22 @@ MonoBehaviour:
   DoorEnterance: {fileID: 7653756439270268857}
   DeathScreenMessages: []
   CameraFollowsPlayer: 0
+--- !u!114 &1389205792253069297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484632047224130825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6ebdc94be5ce24c95708ec81be7442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WrongDoors:
+  - {fileID: 5791230292114321028}
+  - {fileID: 4285833453655306218}
+  SelfPrefab: {fileID: 0}
 --- !u!1 &2435533349132756806
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,11 +890,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DestinationRoom
+      value: 
+      objectReference: {fileID: 6926816643737572232, guid: 3446f3046a198ed4bbb9861af755df6a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+--- !u!114 &5791230292114321028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+  m_PrefabInstance: {fileID: 2882259941684800553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6239793133191435585 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8171758357107571048, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
@@ -935,11 +967,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DestinationRoom
+      value: 
+      objectReference: {fileID: 228652988138410756, guid: ccd189124934aad4f9c900653606ddb5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+--- !u!114 &4285833453655306218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+  m_PrefabInstance: {fileID: 5538050611793980743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4448695920542127151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8171758357107571048, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
