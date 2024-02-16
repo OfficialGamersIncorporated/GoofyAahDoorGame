@@ -3,21 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Events;
+using TMPro;
 
 public class Door : MonoBehaviour {
 
-    AudioSource OpenSound;
+    [Tooltip("Optional. Don't set from code. Use Door.SetDestinationRoom()")]
+    public Room DestinationRoom;
+    public UnityEvent DoorEntered;
+
+    [Space]
+    public TextMeshPro EmojiTextObject;
     public GameObject ClosedState;
     public GameObject OpenState;
     public GameObject SpawnPoint;
     public Vector2 FacingNormal;
-    public UnityEvent DoorEntered;
+
+    AudioSource OpenSound;
 
     private void Start() {
         OpenSound = GetComponent<AudioSource>();
+        SetDestinationRoom(DestinationRoom);
     }
     public void Open() {
-        print("OPEN DOOR?");
         if (OpenSound)
             OpenSound.Play();
         ClosedState.SetActive(false);
@@ -29,7 +36,11 @@ public class Door : MonoBehaviour {
         OpenState.SetActive(false);
         ClosedState.SetActive(true);
     }
-
+    public void SetDestinationRoom(Room destination) {
+        DestinationRoom = destination;
+        if (destination)
+            EmojiTextObject.text = destination.name;
+    }
 
 }
 

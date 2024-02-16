@@ -10,7 +10,8 @@ public class Room : MonoBehaviour {
     public bool CameraFollowsPlayer = false;
 
     void PlayerReachedExit() {
-        DungeonManager.Singleton.GoToDoorSelectingRoom();
+        if (!DoorExit.DestinationRoom)
+            DungeonManager.Singleton.GoToDoorSelectingRoom();
     }
     private void OnEnable() {
         if (DoorExit)

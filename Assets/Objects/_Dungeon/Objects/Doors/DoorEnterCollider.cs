@@ -13,6 +13,8 @@ public class DoorEnterCollider : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject == PlayerInput.Singleton.gameObject) {
             door.DoorEntered.Invoke();
+            if(door.DestinationRoom)
+                DungeonManager.Singleton.GoToRoom(door.DestinationRoom);
         }
     }
 }

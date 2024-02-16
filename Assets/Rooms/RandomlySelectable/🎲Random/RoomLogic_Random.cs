@@ -12,9 +12,12 @@ public class RoomLogic_Random : RoomLogic {
         base.Start();
 
         doorRoom = DungeonManager.Singleton.GetNewRooms(1)[0];
-        DoorText.text = doorRoom.name;
+        //DoorText.text = doorRoom.name;
+        room.DoorExit.SetDestinationRoom(doorRoom);
+
+        OpenExitWithDelay(1);
     }
-    public void GoToRoom() {
-        DungeonManager.Singleton.GoToRoom(doorRoom);
-    }
+    //public void GoToRoom() {
+    //    DungeonManager.Singleton.GoToRoom(doorRoom);
+    //}
 }

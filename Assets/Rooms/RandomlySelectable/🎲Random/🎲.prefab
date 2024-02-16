@@ -536,7 +536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6240120704823231053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada51ade98a156a40b2c88c04ee70495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorExit: {fileID: 0}
+  DoorExit: {fileID: 3335125676591101004}
   DoorEnterance: {fileID: 5743139009210253645}
   DeathScreenMessages: []
   CameraFollowsPlayer: 0
@@ -893,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6539065810337639731, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8171758357107571048, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -937,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537118208969522042, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
       propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.size
@@ -977,3 +977,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8171758357107571048, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
   m_PrefabInstance: {fileID: 6478975899432548065}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3335125676591101004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+  m_PrefabInstance: {fileID: 6478975899432548065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
