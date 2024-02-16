@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2517459254258512552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -238,7 +238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &900934715307678223
 RectTransform:
   m_ObjectHideFlags: 0
@@ -413,7 +413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4707563503842929114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1379,15 +1379,11 @@ MonoBehaviour:
   DoorExit: {fileID: 0}
   DoorEnterance: {fileID: 5052424499148189165}
   DeathScreenMessages: []
+  CameraFollowsPlayer: 0
   Doors:
   - {fileID: 755999263091184590}
   - {fileID: 2166206630458485772}
   - {fileID: 3555092606112953570}
-  DoorTexts:
-  - {fileID: 2877603080413656806}
-  - {fileID: 697908787026491598}
-  - {fileID: 2177417151502215095}
-  DoorRooms: []
 --- !u!1001 &5113684006440515151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1519,13 +1515,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DestinationRoom: {fileID: 0}
+  DoorEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  EmojiTextObject: {fileID: 0}
   ClosedState: {fileID: 2037906556160842620}
   OpenState: {fileID: 3498904681745091893}
   SpawnPoint: {fileID: 0}
   FacingNormal: {x: 0, y: 0}
-  DoorEntered:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &5463979149155342293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1730,13 +1728,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DestinationRoom: {fileID: 0}
+  DoorEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  EmojiTextObject: {fileID: 0}
   ClosedState: {fileID: 3679944062137271186}
   OpenState: {fileID: 2294385903003899355}
   SpawnPoint: {fileID: 0}
   FacingNormal: {x: 0, y: 0}
-  DoorEntered:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &9069286692430582115
 PrefabInstance:
   m_ObjectHideFlags: 0

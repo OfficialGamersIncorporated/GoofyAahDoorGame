@@ -7,29 +7,32 @@ public class Room_DoorChooser : Room {
 
     //public List<EmojiDoor> Doors = new List<EmojiDoor>();
     public List<Door> Doors = new List<Door>();
-    public List<TextMeshPro> DoorTexts = new List<TextMeshPro>();
-    public List<Room> DoorRooms = new List<Room>();
+    //public List<TextMeshPro> DoorTexts = new List<TextMeshPro>();
+    //public List<Room> DoorRooms = new List<Room>();
     
 
     IEnumerator Start() {
-        DoorRooms = DungeonManager.Singleton.GetNewRooms(Doors.Count);
-        for(int i = 0; i < DoorTexts.Count; i++) {
-            DoorTexts[i].text = DoorRooms[i].name;
+        List<Room> DoorRooms = DungeonManager.Singleton.GetNewRooms(Doors.Count);
+        for(int i = 0; i < Doors.Count; i++) {
+            Doors[i].SetDestinationRoom(DoorRooms[i]);
         }
-        foreach(Door door in Doors) {
-            door.Close();
-        }
+        //for(int i = 0; i < DoorTexts.Count; i++) {
+        //    DoorTexts[i].text = DoorRooms[i].name;
+        //}
+        //foreach(Door door in Doors) {
+        //    door.Close();
+        //}
         yield return new WaitForSeconds(2);
         for(int i = 0; i < Doors.Count; i++) {
             int doorIndex = i;
             Door door = Doors[i];
             door.Open();
 
-            void DoorEntered() {
-                // test code
-                DungeonManager.Singleton.GoToRoom(DoorRooms[doorIndex]);
-            }
-            door.DoorEntered.AddListener(DoorEntered);
+            //void DoorEntered() {
+            //    // test code
+            //    DungeonManager.Singleton.GoToRoom(DoorRooms[doorIndex]);
+            //}
+            //door.DoorEntered.AddListener(DoorEntered);
         }
     }
     void Update() {
