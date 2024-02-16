@@ -7,6 +7,7 @@ public class Room : MonoBehaviour {
     public Door DoorExit;
     public Door DoorEnterance;
     public List<string> DeathScreenMessages = new List<string>();
+    public bool CameraFollowsPlayer = false;
 
     void PlayerReachedExit() {
         DungeonManager.Singleton.GoToDoorSelectingRoom();

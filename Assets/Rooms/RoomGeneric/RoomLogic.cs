@@ -13,11 +13,11 @@ public class RoomLogic : MonoBehaviour {
     protected void OpenExitDoor() {
         room.DoorExit.Open();
     }
-    private IEnumerator _OpenExitWithDelay(int delay) {
+    private IEnumerator _OpenExitWithDelay(float delay) {
         yield return new WaitForSeconds(delay);
         OpenExitDoor();
     }
-    protected void OpenExitWithDelay(int delay) {
+    protected void OpenExitWithDelay(float delay) {
         StartCoroutine(_OpenExitWithDelay(delay));
     }
 

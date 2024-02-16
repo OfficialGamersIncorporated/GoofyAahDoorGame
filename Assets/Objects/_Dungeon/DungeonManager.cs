@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DungeonManager : MonoBehaviour {
 
     public static DungeonManager Singleton;
+    public Room StartRoomPrefab;
     public SelectableRoomsAsset SelectableRooms;
     public SelectableRoomsAsset DoorChoosingRooms;
     public float PlayerEnterRoomSpeed = 10;
@@ -19,6 +20,8 @@ public class DungeonManager : MonoBehaviour {
     private void Start() {
         if (CurrentRoom)
             StartCoroutine(_EnterRoom(CurrentRoom));
+        if(!CurrentRoom)
+            GoToRoom(StartRoomPrefab);
     }
 
     Room GetRandomRoom(SelectableRoomsAsset roomsAsset) {
@@ -34,18 +37,22 @@ public class DungeonManager : MonoBehaviour {
     public void GoToDoorSelectingRoom() {
         GoToRoom(GetRandomRoom(DoorChoosingRooms));
     }
-    private IEnumerator _EnterRoom(Room existingRoom) {
+    public IEnumerator _EnterRoom(Room existingRoom) {
         PlayerInput player = PlayerInput.Singleton;
         Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
         Door enterance = existingRoom.DoorEnterance;
+        if(!enterance) yield break;
 
         player.gameObject.SetActive(false);
+        // we move the player before they're enabled because the camera snaps to the
+        // player's postion in rooms with CameraFollowsPlayer, even when the player is disabled.
+        player.transform.position = enterance.SpawnPoint.transform.position;
+
         yield return new WaitForSeconds(.5f);
         enterance.Open();
         yield return new WaitForSeconds(.5f);
         player.gameObject.SetActive(true);
 
-        player.transform.position = enterance.SpawnPoint.transform.position;
         playerRB.velocity = enterance.FacingNormal * PlayerEnterRoomSpeed;
 
         yield return new WaitForSeconds(.25f);

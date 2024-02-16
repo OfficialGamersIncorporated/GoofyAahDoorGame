@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: SelectableRooms
   m_EditorClassIdentifier: 
   Rooms:
-  - {fileID: 5008624847972007483, guid: a9dcc45e08ae8174789099d01e35fa2a, type: 3}
+  - {fileID: 5740065353553005001, guid: 2fb49e03e7659414f9716e81d5b43f3e, type: 3}
+  - {fileID: 3015785999525887173, guid: c67caf3afc7d9b94dad3540fe6c64342, type: 3}
+  - {fileID: 4358234188277573280, guid: b15ce6a0c8536bd41b90caf61ffd23e6, type: 3}
   - {fileID: 862738646744006651, guid: e4b3c5b3def781c42b9d1aa159bea260, type: 3}
   - {fileID: 8253381209128528144, guid: afa717d0a67012142b1297cc38d578e1, type: 3}
   - {fileID: 5845520100845383676, guid: 9626d13770b46cf4b9de5ea9dd38a07d, type: 3}
-  - {fileID: 4979863683330635949, guid: bad3495b07796404baf6edcfd248a126, type: 3}
+  - {fileID: 3215795269720109160, guid: d63b2996eb2223348893dd494748f2d0, type: 3}
+  - {fileID: 5750421178850063338, guid: 14645f7ce9198f545bc306214ebfd7dd, type: 3}
   - {fileID: 7955011645057530255, guid: ca1563c9fe407ba4fba6cc5a99cbb8c4, type: 3}
   - {fileID: 1175115065498471853, guid: e3b4a0247b4056045903f1e083b76c4e, type: 3}
+  - {fileID: 8287185657074755632, guid: 9597b0b75c5c590409ba6b2ce1561387, type: 3}
+  - {fileID: 4979863683330635949, guid: bad3495b07796404baf6edcfd248a126, type: 3}

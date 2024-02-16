@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3a1d0dc7bcb67489f7b02032beea56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartRoomPrefab: {fileID: 3296536078912124702, guid: 23643ee408791474da410c27223049b1, type: 3}
   SelectableRooms: {fileID: 11400000, guid: 9cafed73459b9944789a2996d6e1aedd, type: 2}
   DoorChoosingRooms: {fileID: 11400000, guid: a8f04cd2ef95c344280209cd1fbb54a6, type: 2}
   PlayerEnterRoomSpeed: 10
