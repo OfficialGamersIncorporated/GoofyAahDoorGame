@@ -257,9 +257,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeldWeapon: {fileID: 0}
   MoveDirection: {x: -1, y: 0}
+  LookDirection: {x: -1, y: 0}
   MaxWalkSpeed: 20
   Acceleration: 100
   Deceleration: 100
+  TargetFaceMode: 0
 --- !u!82 &-3933588969658018094
 AudioSource:
   m_ObjectHideFlags: 0

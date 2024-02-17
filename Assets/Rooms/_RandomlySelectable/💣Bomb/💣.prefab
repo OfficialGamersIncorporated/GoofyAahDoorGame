@@ -281,6 +281,7 @@ MonoBehaviour:
   - What did you expect?
   - Really?
   - Well, you were warned.
+  CameraFollowsPlayer: 0
 --- !u!114 &6305343387119649659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 6755390562537298220}
-  BombPrefab: {fileID: 7663353902905408054, guid: 377a2754e74435849877ff47b43767d2, type: 3}
+  BombPrefab: {fileID: 1752445434632711125, guid: 82ba7834a6225b7488aed050c8dca5dd, type: 3}
   BombLaunchForce: 5
   BombFuseTime: 0.6666667
 --- !u!1 &8489806165456917747

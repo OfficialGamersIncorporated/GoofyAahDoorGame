@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: {fileID: 2514531152641380043}
-  FuseTime: 3
+  FuseTime: 1
 --- !u!1001 &204872393185492344
 PrefabInstance:
   m_ObjectHideFlags: 0
