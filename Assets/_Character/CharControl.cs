@@ -14,7 +14,7 @@ public class CharControl : MonoBehaviour {
     public float Acceleration = 30;
     public float Deceleration = 60;
 
-    public enum TargetFaceModeType { Flip, Rotate };
+    public enum TargetFaceModeType { Flip, Rotate, None };
     public TargetFaceModeType TargetFaceMode = TargetFaceModeType.Flip;
 
     public void EquipWeapon(Weapon weaponPrefab) {
@@ -44,7 +44,7 @@ public class CharControl : MonoBehaviour {
             //transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * flipMultiplier, transform.localScale.y, transform.localScale.z);
 
             spriteRenderer.flipX = LookDirection.x > 0;
-        } else {
+        } else if (TargetFaceMode == TargetFaceModeType.Rotate) {
             transform.LookAt(transform.position + (Vector3)LookDirection, Vector3.forward);
             transform.rotation *= Quaternion.Euler(-90,0,0);
         }

@@ -2055,6 +2055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2892387501902131204}
   - component: {fileID: 8287185657074755632}
+  - component: {fileID: 2855388176499547776}
   - component: {fileID: 3110451961899608357}
   - component: {fileID: 3132243398526090544}
   m_Layer: 0
@@ -2109,6 +2110,21 @@ MonoBehaviour:
   - Hell let loose
   - You failed to save the babies
   CameraFollowsPlayer: 0
+--- !u!114 &2855388176499547776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674200967254968755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5475801af3ec20745b10782e108ccd4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Units:
+  - {fileID: 4440629762254259876}
+  PostFightElements: {fileID: 4212632894895559232}
 --- !u!114 &3110451961899608357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,9 +2137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba0e3da11ca9284b9c5241540e0a60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Units:
-  - {fileID: 4440629762254259876}
-  PostFightElements: {fileID: 4212632894895559232}
   PlayerAcceleration: 10
 --- !u!61 &3132243398526090544
 BoxCollider2D:

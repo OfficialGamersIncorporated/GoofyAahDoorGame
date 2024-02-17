@@ -35,8 +35,9 @@ public class Weapon : MonoBehaviour {
         //transform.up = toMouse.normalized;
         //transform.LookAt(mouseWorldPos, new Vector3(0, 0, 1));
 
-        transform.LookAt(transform.position + (Vector3)lookVector, new Vector3(0, 0, 1));
-        transform.rotation *= Quaternion.Euler(-90,0,180);
+        transform.rotation = Quaternion.LookRotation((Vector3)lookVector, Vector3.forward) * Quaternion.Euler(-90, 0, 180);
+        //transform.LookAt(transform.position + (Vector3)lookVector, new Vector3(0, 0, 1));
+        //transform.rotation *= Quaternion.Euler(-90,0,180);
     }
 
     public virtual void PrimaryFired() {

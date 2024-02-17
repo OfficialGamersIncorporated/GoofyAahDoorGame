@@ -333,6 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Screen: {fileID: 6002987477973828104}
+  DeathMessageObject: {fileID: 740203782683868515}
 --- !u!1 &3052449909578901715
 GameObject:
   m_ObjectHideFlags: 0

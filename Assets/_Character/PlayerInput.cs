@@ -13,13 +13,13 @@ public class PlayerInput : MonoBehaviour {
     }
 
     private void Update() {
-        charControl.MoveDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        charControl.MoveDirection = Vector2.ClampMagnitude(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")), 1);
 
         Weapon heldWeapon = charControl.HeldWeapon;
         if(heldWeapon) {
 
             Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            heldWeapon.lookVector = (mouseWorldPos - (Vector2)transform.position).normalized;
+            charControl.LookDirection = (mouseWorldPos - (Vector2)transform.position).normalized;
 
             if(Input.GetButtonDown("Fire1"))
                 heldWeapon.PrimaryFired();

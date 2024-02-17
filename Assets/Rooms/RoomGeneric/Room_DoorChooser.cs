@@ -22,7 +22,7 @@ public class Room_DoorChooser : Room {
         //foreach(Door door in Doors) {
         //    door.Close();
         //}
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         for(int i = 0; i < Doors.Count; i++) {
             int doorIndex = i;
             Door door = Doors[i];

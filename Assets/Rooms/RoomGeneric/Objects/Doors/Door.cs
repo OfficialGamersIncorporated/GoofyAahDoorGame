@@ -53,9 +53,18 @@ public class DoorEditor : Editor {
 
         if(GUILayout.Button("Open Door")) {
             selectedObject.Open();
+            Undo.RecordObject(selectedObject, "Pre-open door");
+            EditorUtility.SetDirty(selectedObject);
         }
         if(GUILayout.Button("Close Door")) {
             selectedObject.Close();
+            Undo.RecordObject(selectedObject, "Pre-close door");
+            EditorUtility.SetDirty(selectedObject);
+        }
+        if(GUILayout.Button("Refresh Emoji")) {
+            selectedObject.SetDestinationRoom(selectedObject.DestinationRoom);
+            Undo.RecordObject(selectedObject, "Refresh emoji display");
+            EditorUtility.SetDirty(selectedObject);
         }
     }
 }

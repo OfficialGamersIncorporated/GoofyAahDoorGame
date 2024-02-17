@@ -41,7 +41,13 @@ public class DungeonManager : MonoBehaviour {
         PlayerInput player = PlayerInput.Singleton;
         Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
         Door enterance = existingRoom.DoorEnterance;
-        if(!enterance) yield break;
+        if(!enterance) {
+            Debug.LogWarning("Room " + existingRoom.name + " doesn't have an enterance door defined.");
+            yield break;
+        }
+
+        float enterSpeed = playerRB.velocity.magnitude;
+        print(enterSpeed);
 
         player.gameObject.SetActive(false);
         // we move the player before they're enabled because the camera snaps to the
@@ -53,7 +59,7 @@ public class DungeonManager : MonoBehaviour {
         yield return new WaitForSeconds(.5f);
         player.gameObject.SetActive(true);
 
-        playerRB.velocity = enterance.FacingNormal * PlayerEnterRoomSpeed;
+        playerRB.velocity = enterance.FacingNormal * Mathf.Max(PlayerEnterRoomSpeed, enterSpeed);
 
         yield return new WaitForSeconds(.25f);
         enterance.Close();

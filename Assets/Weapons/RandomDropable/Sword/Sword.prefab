@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 28256392885606531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67,7 +67,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,7 +77,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5, y: 1}
+  m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
 --- !u!114 &4892289037689975548
 MonoBehaviour:
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 1
   PhysicsImpulse: 20
+  Continuous: 0
   HitEnemies: 1
   HitAllies: 0
 --- !u!1 &2668391621489387484
@@ -261,10 +262,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953d0882d7ed633489c05c7e0be054b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PrimaryFirerate: 32
+  PrimaryFireProjectileSpeed: 10
   PrimaryFireAttackTrigger: {fileID: 5239603516693415606}
-  SecondaryFireAttackTrigger: {fileID: 0}
   PrimaryFireProjectilePrefab: {fileID: 0}
+  SecondaryFirerate: 32
+  SecondaryFireProjectileSpeed: 10
+  SecondaryFireAttackTrigger: {fileID: 0}
   SecondaryFireProjectilePrefab: {fileID: 0}
+  lookVector: {x: 0, y: 0}
 --- !u!95 &7363628066303389567
 Animator:
   serializedVersion: 7

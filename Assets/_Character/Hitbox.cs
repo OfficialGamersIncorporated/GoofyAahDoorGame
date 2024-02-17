@@ -16,14 +16,15 @@ public class Hitbox : MonoBehaviour {
         if(other.CompareTag("Enemy") && !HitEnemies) return;
         if(other.CompareTag("Player") && !HitAllies) return;
 
-        Health healthComp = other.GetComponent<Health>();
-        if(healthComp && healthComp.transform != transform.parent)
-            healthComp.ChangeHealth(-Damage);
-
         Rigidbody2D otherRB = other.GetComponent<Rigidbody2D>();
         Vector3 toOtherVector = other.transform.position - transform.position;
         if(otherRB)
             otherRB.AddForce(toOtherVector.normalized * PhysicsImpulse, ForceMode2D.Impulse);
+
+        // damage should be done after the physics impulse so gibs can inherit their parents velocity after being pushed back.
+        Health healthComp = other.GetComponent<Health>();
+        if(Damage != 0 && healthComp && healthComp.transform != transform.parent)
+            healthComp.ChangeHealth(-Damage);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if(!Continuous) return;
