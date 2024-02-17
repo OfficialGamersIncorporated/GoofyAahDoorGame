@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SelectableRooms
   m_EditorClassIdentifier: 
   Rooms:
+  - {fileID: 8663784763083664443, guid: 630113b56e623d44e9a4d615e9a4187f, type: 3}
   - {fileID: 5644637074746869637, guid: a17c39ea447c826459a452999e5d990a, type: 3}
   - {fileID: 5740065353553005001, guid: 2fb49e03e7659414f9716e81d5b43f3e, type: 3}
   - {fileID: 3015785999525887173, guid: c67caf3afc7d9b94dad3540fe6c64342, type: 3}

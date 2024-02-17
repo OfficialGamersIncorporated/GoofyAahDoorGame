@@ -334,6 +334,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6961265681965047905, guid: 5a4040094dae23444a1dce6f5864564a, type: 3}
+      propertyPath: lookVector.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8468489077037866593, guid: 5a4040094dae23444a1dce6f5864564a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

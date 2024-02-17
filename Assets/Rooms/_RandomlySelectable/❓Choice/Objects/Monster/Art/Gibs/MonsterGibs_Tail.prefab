@@ -255,6 +255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodSplatter
       objectReference: {fileID: 0}
+    - target: {fileID: 6483796859629049738, guid: 2946df7b953b16a469003873e43a5623, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7890058097242155398, guid: 2946df7b953b16a469003873e43a5623, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

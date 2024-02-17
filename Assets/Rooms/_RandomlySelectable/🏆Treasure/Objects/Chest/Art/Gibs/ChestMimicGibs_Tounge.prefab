@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2128921688775893725}
   - component: {fileID: 7867234815737043975}
   - component: {fileID: 3084147572155367982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ChestMimicGibs_Tounge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,6 +231,10 @@ PrefabInstance:
     - target: {fileID: 6483796859629049738, guid: 2946df7b953b16a469003873e43a5623, type: 3}
       propertyPath: m_Name
       value: BloodSplatter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483796859629049738, guid: 2946df7b953b16a469003873e43a5623, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7890058097242155398, guid: 2946df7b953b16a469003873e43a5623, type: 3}
       propertyPath: m_LocalPosition.x

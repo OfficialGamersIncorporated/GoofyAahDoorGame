@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DungeonManager : MonoBehaviour {
 
-    public static DungeonManager Singleton;
+    public float PlayerEnterRoomSpeed = 10;
+
     public Room StartRoomPrefab;
     public SelectableRoomsAsset SelectableRooms;
     public SelectableRoomsAsset DoorChoosingRooms;
-    public float PlayerEnterRoomSpeed = 10;
+    public TransitionScreen transitionScreen;
+
     [HideInInspector]
     public Room CurrentRoom;
+    public static DungeonManager Singleton;
+    PlayerInput player;
 
     private void Awake() {
         Singleton = this;
@@ -37,16 +41,18 @@ public class DungeonManager : MonoBehaviour {
     public void GoToDoorSelectingRoom() {
         GoToRoom(GetRandomRoom(DoorChoosingRooms));
     }
-    public IEnumerator _EnterRoom(Room existingRoom) {
-        PlayerInput player = PlayerInput.Singleton;
+    public IEnumerator _EnterRoom(Room existingRoom, float enterSpeed = 0) {
+        if (!player)
+            player = PlayerInput.Singleton;
         Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
         Door enterance = existingRoom.DoorEnterance;
         if(!enterance) {
             Debug.LogWarning("Room " + existingRoom.name + " doesn't have an enterance door defined.");
+            player.gameObject.SetActive(true);
             yield break;
         }
 
-        float enterSpeed = playerRB.velocity.magnitude;
+        //float enterSpeed = playerRB.velocity.magnitude;
         print(enterSpeed);
 
         player.gameObject.SetActive(false);
@@ -65,11 +71,24 @@ public class DungeonManager : MonoBehaviour {
         enterance.Close();
     }
     public void GoToRoom(Room roomPrefab) {
+        StartCoroutine(_GoToRoom(roomPrefab));
+    }
+    IEnumerator _GoToRoom(Room roomPrefab) {
+        if(!player)
+            player = PlayerInput.Singleton;
+
+        float enterSpeed = player.GetComponent<Rigidbody2D>().velocity.magnitude;
+        //print("GOTOROOM player velocity: " + player.GetComponent<Rigidbody2D>().velocity.magnitude);
+        player.gameObject.SetActive(false);
+        yield return transitionScreen.Show();
+
         DestroyCurrentRoom();
         Room newRoom = Instantiate<Room>(roomPrefab);
         CurrentRoom = newRoom;
 
-        StartCoroutine(_EnterRoom(newRoom));
+        yield return transitionScreen.Hide();
+
+        yield return _EnterRoom(newRoom, enterSpeed);
     }
     public void DestroyCurrentRoom() {
         if(CurrentRoom)

@@ -176,6 +176,7 @@ MonoBehaviour:
   - {fileID: 5591255436472532480, guid: 2727c262549842445bdca705b7f3c5de, type: 3}
   - {fileID: 3277397641606761949, guid: a6f5e71fcb654424abb855c08feace39, type: 3}
   GibsMaxEjectionForce: 10
+  GibsSpawnDistance: 1.5
   Died:
     m_PersistentCalls:
       m_Calls: []
@@ -214,9 +215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeldWeapon: {fileID: 0}
   MoveDirection: {x: 0, y: 0}
+  LookDirection: {x: -1, y: 0}
   MaxWalkSpeed: 5
   Acceleration: 60
   Deceleration: 60
+  TargetFaceMode: 0
 --- !u!114 &3037226249974183883
 MonoBehaviour:
   m_ObjectHideFlags: 0

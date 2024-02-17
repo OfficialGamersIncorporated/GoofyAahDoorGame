@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour {
     public Collider2D SecondaryFireAttackTrigger;
     public Rigidbody2D SecondaryFireProjectilePrefab;
 
-    public Vector2 lookVector;
+    public Vector2 lookVector = Vector2.left;
     float lastPrimaryFired;
     float lastSecondaryFired;
 

@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2163af0ef03616448aca6659e74e9593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReverseDelay: 3.5
+  ReverseDelay: 2
 --- !u!1 &5987861540543984156
 GameObject:
   m_ObjectHideFlags: 0

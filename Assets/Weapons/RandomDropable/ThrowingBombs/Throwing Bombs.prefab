@@ -55,7 +55,7 @@ MonoBehaviour:
   SecondaryFireProjectileSpeed: 10
   SecondaryFireAttackTrigger: {fileID: 0}
   SecondaryFireProjectilePrefab: {fileID: 0}
-  lookVector: {x: 0, y: 0}
+  lookVector: {x: -1, y: 0}
 --- !u!95 &6978000153216300126
 Animator:
   serializedVersion: 7

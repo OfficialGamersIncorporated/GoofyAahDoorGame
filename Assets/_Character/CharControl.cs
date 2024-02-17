@@ -9,7 +9,7 @@ public class CharControl : MonoBehaviour {
     public Weapon HeldWeapon;
 
     public Vector2 MoveDirection;
-    public Vector2 LookDirection;
+    public Vector2 LookDirection = Vector2.left;
     public float MaxWalkSpeed = 5;
     public float Acceleration = 30;
     public float Deceleration = 60;

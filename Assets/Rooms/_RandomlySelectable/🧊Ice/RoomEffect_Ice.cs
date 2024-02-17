@@ -34,6 +34,12 @@ public class RoomEffect_Ice : RoomEffect {
         collision.attachedRigidbody.angularDrag = RigidbodyAngularDrag;
     }
     private void OnDestroy() {
+        print("destroying!");
+        playerCharControl.Acceleration = playerDefaultAccell;
+        playerCharControl.Deceleration = playerDefaultDecell;
+    }
+    private void OnDisable() {
+        print("IM DISABLED!");
         playerCharControl.Acceleration = playerDefaultAccell;
         playerCharControl.Deceleration = playerDefaultDecell;
     }

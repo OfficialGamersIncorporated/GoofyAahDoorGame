@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6263428743611619443}
   - component: {fileID: 916679473982883059}
   - component: {fileID: 4946588348572857730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ChestMimicGibs_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
