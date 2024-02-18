@@ -175,6 +175,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3851088155219097586}
     m_Modifications:
+    - target: {fileID: 1518849177617135018, guid: db2dda42c23c0f94bb50ce098bc9a0c8, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2320113132238615475, guid: db2dda42c23c0f94bb50ce098bc9a0c8, type: 3}
       propertyPath: m_Name
       value: Explosion
