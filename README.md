@@ -10,7 +10,8 @@ Battle bosses and a random assortment of other things that sometimes aren't host
 
 made in Unity ~~2022.3.19f1~~ 2023.2.9f1
 The game can be played on itch.io in the web browser or downloaded from the releases page here on GitHub.
-https://pc-hris.itch.io/dooria
+
+<img src="https://github.com/OfficialGamersIncorporated/GoofyAahDoorGame/assets/32988106/906b0d77-7754-4972-9ffd-0d7c3b73efe0" width="16" height="16"> [Play on itch.io](https://pc-hris.itch.io/dooria)
 
 </br></br></br></br>
 
