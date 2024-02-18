@@ -11,7 +11,7 @@ public class RoomLogic_Random : RoomLogic {
     new void Start() {
         base.Start();
 
-        doorRoom = DungeonManager.Singleton.GetNewRooms(1)[0];
+        doorRoom = DungeonManager.Singleton.GetRandomRooms(1)[0];
         //DoorText.text = doorRoom.name;
         room.DoorExit.SetDestinationRoom(doorRoom);
 

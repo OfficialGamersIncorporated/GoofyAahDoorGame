@@ -11,10 +11,16 @@ public class Hitbox : MonoBehaviour {
     public bool Continuous = false;
     public bool HitEnemies = false;
     public bool HitAllies = true;
+    public bool SelfDestroyOnContact = false;
 
     void ProcessCollision(Collider2D other) {
         if(other.CompareTag("Enemy") && !HitEnemies) return;
         if(other.CompareTag("Player") && !HitAllies) return;
+
+        Hitbox otherHitbox = other.GetComponent<Hitbox>();
+        if(other.isTrigger && !otherHitbox) return;
+        if(otherHitbox && (otherHitbox.HitAllies == HitAllies || otherHitbox.HitEnemies == HitEnemies))
+            return;
 
         Rigidbody2D otherRB = other.GetComponent<Rigidbody2D>();
         Vector3 toOtherVector = other.transform.position - transform.position;
@@ -25,6 +31,8 @@ public class Hitbox : MonoBehaviour {
         Health healthComp = other.GetComponent<Health>();
         if(Damage != 0 && healthComp && healthComp.transform != transform.parent)
             healthComp.ChangeHealth(-Damage);
+
+        if(SelfDestroyOnContact) Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if(!Continuous) return;
