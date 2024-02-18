@@ -22,12 +22,13 @@ public class PlayerInput : MonoBehaviour {
         Weapon heldWeapon = charControl.HeldWeapon;
         if(heldWeapon) {
 
+            // controller support is going to take more time than I have.
             Vector2 controllerLook = new Vector2(Input.GetAxisRaw("LookHorizontal"), Input.GetAxisRaw("LookVertical"));
-            print(controllerLook);
-            if(controllerLook.magnitude > 0.1f) {
-                useController = true;
-                lastControllerLook = controllerLook;
-            }
+            //print(controllerLook);
+            //if(controllerLook.magnitude > 0.1f) {
+            //    useController = true;
+            //    lastControllerLook = controllerLook;
+            //}
             if(Input.mousePositionDelta.magnitude > 0) useController = false;
 
             Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

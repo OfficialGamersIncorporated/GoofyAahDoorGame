@@ -230,7 +230,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -264,6 +264,8 @@ MonoBehaviour:
   Acceleration: 30
   Deceleration: 60
   TargetFaceMode: 1
+  InvertFlip: 0
+  RotateOffset: 0
 --- !u!114 &9181878611066966060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c86ce027b2be844b8e1486f8e21238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LookTarget: 0
+  TargetingMode: 0
   TowardsTargetLinear: 1
   TowardsTargetSinFrequency: 0
   TowardsTargetSinAmplitude: 0
@@ -299,6 +303,7 @@ MonoBehaviour:
   Continuous: 1
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!114 &1845346532089407947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthCurrent: 3
   HealthMax: 3
+  InvincabilityAfterHit: 0
   DestroyOnDeath: 1
   GibsPrefabs:
   - {fileID: 7796205495936953202, guid: abb9ac46dad6ec149a2453b7241e5518, type: 3}

@@ -3706,6 +3706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthCurrent: 20
   HealthMax: 20
+  InvincabilityAfterHit: 0
   DestroyOnDeath: 1
   GibsPrefabs:
   - {fileID: 5813748133658834216, guid: 596722d79318d17498ef4bf61840a882, type: 3}

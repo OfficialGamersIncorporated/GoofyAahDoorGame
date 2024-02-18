@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: HitAllies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8581286014633115374, guid: 31baa2cb6dc15ec4c85c64856eb4d54d, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

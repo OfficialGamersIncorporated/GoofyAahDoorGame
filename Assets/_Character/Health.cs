@@ -7,6 +7,7 @@ public class Health : MonoBehaviour {
 
     public float HealthCurrent = 3;
     public float HealthMax = 3;
+    public float InvincabilityAfterHit = 0;
     public bool DestroyOnDeath = true;
     [Tooltip("Will spawn one of each. Put multiple of the same prefab to spawn more than one of it.")]
     public List<Rigidbody2D> GibsPrefabs;
@@ -18,11 +19,16 @@ public class Health : MonoBehaviour {
 
     new Rigidbody2D rigidbody;
 
+    float lastHitTick;
+
     private void Start() {
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
     public void ChangeHealth(float healthDelta) {
+        if(Time.time - lastHitTick < InvincabilityAfterHit && healthDelta < 0) return;
+        lastHitTick = Time.time;
+
         HealthCurrent += healthDelta;
         if(HealthCurrent <= 0) Die();
         HealthChanged.Invoke();

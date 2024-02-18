@@ -121,6 +121,8 @@ MonoBehaviour:
   Acceleration: 60
   Deceleration: 60
   TargetFaceMode: 0
+  InvertFlip: 0
+  RotateOffset: 0
 --- !u!114 &2725205746361749952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthCurrent: 3
   HealthMax: 3
+  InvincabilityAfterHit: 0.5
   DestroyOnDeath: 1
   GibsPrefabs:
   - {fileID: 8905674905170723501, guid: 71e0a649b1a6e024980affe1bd7e2fcb, type: 3}
