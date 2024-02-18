@@ -62,14 +62,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DestinationRoom: {fileID: 0}
+  DoorEntered:
+    m_PersistentCalls:
+      m_Calls: []
   EmojiTextObject: {fileID: 4314115360679894064}
   ClosedState: {fileID: 6539065810337639731}
   OpenState: {fileID: 8537118208969522042}
   SpawnPoint: {fileID: 5537962598185916190}
   FacingNormal: {x: 0, y: -1}
-  DoorEntered:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!82 &-6461899142321873577
 AudioSource:
   m_ObjectHideFlags: 0
@@ -210,7 +211,7 @@ GameObject:
   - component: {fileID: 5403965691891939443}
   - component: {fileID: 4652254272786458697}
   - component: {fileID: 8757831438212538472}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoorClosed
   m_TagString: Untagged
   m_Icon: {fileID: 0}

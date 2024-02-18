@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+//using UnityEditor.Experimental.GraphView; // where the fuck did this come from?
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
 
     public static PlayerInput Singleton;
     CharControl charControl;
+
+    bool useController = false;
+    Vector2 lastControllerLook;
 
     private void Awake() {
         Singleton = this;
@@ -18,8 +22,23 @@ public class PlayerInput : MonoBehaviour {
         Weapon heldWeapon = charControl.HeldWeapon;
         if(heldWeapon) {
 
+            Vector2 controllerLook = new Vector2(Input.GetAxisRaw("LookHorizontal"), Input.GetAxisRaw("LookVertical"));
+            print(controllerLook);
+            if(controllerLook.magnitude > 0.1f) {
+                useController = true;
+                lastControllerLook = controllerLook;
+            }
+            if(Input.mousePositionDelta.magnitude > 0) useController = false;
+
             Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            charControl.LookDirection = (mouseWorldPos - (Vector2)transform.position).normalized;
+
+            if(useController) {
+                if(controllerLook.magnitude > 0)
+                    charControl.LookDirection = controllerLook.normalized;
+                else
+                    charControl.LookDirection = lastControllerLook.normalized;
+            } else
+                charControl.LookDirection = (controllerLook + (mouseWorldPos - (Vector2)transform.position)).normalized;
 
             if(Input.GetButtonDown("Fire1"))
                 heldWeapon.PrimaryFired();

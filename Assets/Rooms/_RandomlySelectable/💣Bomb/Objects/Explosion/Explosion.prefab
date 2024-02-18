@@ -175,8 +175,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 2
   PhysicsImpulse: 20
+  Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1518849177617135018
 AudioSource:
   m_ObjectHideFlags: 0
@@ -190,7 +192,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 56563c4028254ca44b78ed679d2c9ace, type: 3}
   m_Resource: {fileID: 8300000, guid: 56563c4028254ca44b78ed679d2c9ace, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
