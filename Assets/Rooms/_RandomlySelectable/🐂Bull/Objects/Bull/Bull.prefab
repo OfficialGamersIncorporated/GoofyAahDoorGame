@@ -104,10 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83716676225b714995b071f6f0b33af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationOffset: -90
-  MaxSpeed: 10
-  Acceleration: 2
-  RecoveryTime: 1
+  MaxSpeed: 50
+  Acceleration: 500
+  RecoveryTime: 2
 --- !u!114 &3819143130700400679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +130,7 @@ MonoBehaviour:
   - {fileID: -1680955864850376926, guid: a3142d1743e12cf41a702851da4dbd2a, type: 3}
   - {fileID: 6107069362156295334, guid: d877928ebcd42db4092fb45aa8e9233e, type: 3}
   GibsMaxEjectionForce: 15
+  GibsSpawnDistance: 1.5
   Died:
     m_PersistentCalls:
       m_Calls: []
