@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3967d95faf86e414fbd2fd2155a48b31
+guid: 977c6034d3edb7e4a9c189cd343445a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2099294654769655469
-    second: ezgif-frame-031_0
+      213: 3455813941074746506
+    second: CharacterV2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ezgif-frame-031_0
+      name: CharacterV2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 41
         y: 0
-        width: 480
-        height: 480
+        width: 179
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 351149f42aecdd2e0800000000000000
-      internalID: -2099294654769655469
+      spriteID: a8c5a9f387485ff20800000000000000
+      internalID: 3455813941074746506
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ezgif-frame-031_0: -2099294654769655469
+      CharacterV2_0: 3455813941074746506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
