@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3967d95faf86e414fbd2fd2155a48b31
+guid: ab04de420fc8d1a4e85d18448cf2ba7e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2099294654769655469
-    second: ezgif-frame-031_0
+      213: -4454422603603834842
+    second: MouseCursor_32x_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -57,7 +57,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 7
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ezgif-frame-031_0
+      name: MouseCursor_32x_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 480
-        height: 480
+        y: 4
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 351149f42aecdd2e0800000000000000
-      internalID: -2099294654769655469
+      spriteID: 62809b81e36be22c0800000000000000
+      internalID: -4454422603603834842
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      ezgif-frame-031_0: -2099294654769655469
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

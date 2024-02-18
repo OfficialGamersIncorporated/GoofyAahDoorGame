@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ezgif-frame-012_0: 2842772201096811181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
