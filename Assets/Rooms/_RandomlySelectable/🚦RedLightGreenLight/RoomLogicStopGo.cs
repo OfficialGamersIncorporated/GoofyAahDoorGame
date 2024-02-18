@@ -84,7 +84,8 @@ public class RoomLogicStopGo : RoomLogic
         for (int i = 0; i < bombsToSpawn; i++)
         {
             GameObject spawnedBomb = Instantiate(bomb, bombSpawnPoint.transform.position, Quaternion.identity);
-            spawnedBomb.GetComponent<Rigidbody2D>().AddForce(UnityEngine.Random.insideUnitCircle * UnityEngine.Random.Range(0.5f, 10f), ForceMode2D.Force);
+            spawnedBomb.transform.parent = gameObject.transform;
+            spawnedBomb.GetComponent<Rigidbody2D>().AddForce(UnityEngine.Random.insideUnitCircle * UnityEngine.Random.Range(0.5f, 50f), ForceMode2D.Force);
         }
     }
 
