@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c86ce027b2be844b8e1486f8e21238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LookTarget: 0
+  TargetingMode: 0
   TowardsTargetLinear: 0
   TowardsTargetSinFrequency: 2
   TowardsTargetSinAmplitude: 1
@@ -192,6 +194,8 @@ MonoBehaviour:
   Acceleration: 10
   Deceleration: 10
   TargetFaceMode: 0
+  InvertFlip: 0
+  RotateOffset: 0
 --- !u!114 &3841329238957726729
 MonoBehaviour:
   m_ObjectHideFlags: 0

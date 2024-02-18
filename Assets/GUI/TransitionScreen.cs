@@ -23,6 +23,7 @@ public class TransitionScreen : MonoBehaviour {
             overlay.color = new Color(1, 1, 1, alpha);
             yield return new WaitForEndOfFrame();
         }
+        overlay.color = new Color(1, 1, 1, 1);
         //yield return null;
     }
     public IEnumerator Hide() {
@@ -33,6 +34,7 @@ public class TransitionScreen : MonoBehaviour {
             overlay.color = new Color(1, 1, 1, 1-alpha);
             yield return new WaitForEndOfFrame();
         }
+        overlay.color = new Color(1, 1, 1, 0);
         //yield return null;
     }
 }

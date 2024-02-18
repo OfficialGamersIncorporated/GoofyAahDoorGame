@@ -44,8 +44,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3a1d0dc7bcb67489f7b02032beea56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollectableBottle: 0
+  CollectableKeyRing: 0
+  CollectableStuffedBear: 0
+  PlayerEnterRoomSpeed: 10
+  VisitCountMode: 0
   StartRoomPrefab: {fileID: 3296536078912124702, guid: 23643ee408791474da410c27223049b1, type: 3}
   SelectableRooms: {fileID: 11400000, guid: 9cafed73459b9944789a2996d6e1aedd, type: 2}
+  AllowMultipleVisitsRooms: {fileID: 11400000, guid: a75cfadd433bbed448a8f7a13e908ce4, type: 2}
   DoorChoosingRooms: {fileID: 11400000, guid: a8f04cd2ef95c344280209cd1fbb54a6, type: 2}
-  PlayerEnterRoomSpeed: 10
+  DoorChoosingRoom_Final: {fileID: 3466995004304137737, guid: b63f6798707ea40489ad6f0f1ec31f8b, type: 3}
+  transitionScreen: {fileID: 0}
+  CollectableAquired:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GUIBossCollectablesDisplay, Assembly-CSharp
+        m_MethodName: RefreshDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   CurrentRoom: {fileID: 0}
+  VisitedRooms: []
+  roomNumber: 0

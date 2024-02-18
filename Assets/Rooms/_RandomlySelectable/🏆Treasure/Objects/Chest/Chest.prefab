@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 9144684689897054141}
   m_Layer: 0
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9171041785506542151
 Transform:
   m_ObjectHideFlags: 0
@@ -191,6 +191,7 @@ MonoBehaviour:
   DestroyOnDeath: 0
   GibsPrefabs: []
   GibsMaxEjectionForce: 10
+  GibsSpawnDistance: 1.5
   Died:
     m_PersistentCalls:
       m_Calls:
@@ -224,9 +225,10 @@ MonoBehaviour:
   LootTable:
   - {fileID: 7346532224318799084, guid: 04affdf17e7281b45af98f15f946b1c2, type: 3}
   - {fileID: 4422210390601350268, guid: d2f22ec2c90987841a7caf20d757910a, type: 3}
-  - {fileID: 4422210390601350268, guid: f55b48ce2843a5c4bb9fd50cbbbcad17, type: 3}
-  - {fileID: 5243270650056335594, guid: 82ba7834a6225b7488aed050c8dca5dd, type: 3}
+  - {fileID: 181535084217383864, guid: 82afcf1e5f46d564c805933ec59f293c, type: 3}
+  - {fileID: 6711228010440713816, guid: 57f1d1cc574eac146b3e0b7166d9416c, type: 3}
   - {fileID: 4113874204581699225, guid: 89115d42ea56baf43bc64f2a22ce5679, type: 3}
+  - {fileID: 5243270650056335594, guid: 82ba7834a6225b7488aed050c8dca5dd, type: 3}
   - {fileID: 6610350863013300150, guid: c29b09945a98dc8418e26511a7580d5a, type: 3}
   - {fileID: 6610350863013300150, guid: c29b09945a98dc8418e26511a7580d5a, type: 3}
   - {fileID: 6610350863013300150, guid: c29b09945a98dc8418e26511a7580d5a, type: 3}
@@ -319,3 +321,4 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0

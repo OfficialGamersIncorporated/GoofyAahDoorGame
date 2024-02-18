@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08182c40b926fac42b7e52cafb9803d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WindVector: {x: 0, y: 100}
+  WindVector: {x: 0, y: 120}
 --- !u!114 &3043804435154648041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856221737746372848}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ba0e3da11ca9284b9c5241540e0a60f, type: 3}
   m_Name: 

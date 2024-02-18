@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6881446837471836590}
   m_Layer: 0
   m_Name: Chest_Mimic
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,6 +203,8 @@ MonoBehaviour:
   Acceleration: 10
   Deceleration: 10
   TargetFaceMode: 0
+  InvertFlip: 0
+  RotateOffset: 0
 --- !u!114 &6611373128353913632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c86ce027b2be844b8e1486f8e21238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LookTarget: 0
+  TargetingMode: 0
   TowardsTargetLinear: 0.5
   TowardsTargetSinFrequency: 12.56638
   TowardsTargetSinAmplitude: 0.5
@@ -238,6 +242,7 @@ MonoBehaviour:
   Continuous: 1
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!95 &6881446837471836590
 Animator:
   serializedVersion: 7

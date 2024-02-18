@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -3933588969658018094}
   m_Layer: 0
   m_Name: CarEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,6 +216,7 @@ MonoBehaviour:
   Continuous: 1
   HitEnemies: 1
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!50 &5158405373147782976
 Rigidbody2D:
   serializedVersion: 4
@@ -262,6 +263,8 @@ MonoBehaviour:
   Acceleration: 100
   Deceleration: 100
   TargetFaceMode: 0
+  InvertFlip: 0
+  RotateOffset: 0
 --- !u!82 &-3933588969658018094
 AudioSource:
   m_ObjectHideFlags: 0

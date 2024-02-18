@@ -2,20 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class DungeonManager : MonoBehaviour {
 
+    public bool CollectableBottle = false;
+    public bool CollectableKeyRing = false;
+    public bool CollectableStuffedBear = false;
+
     public float PlayerEnterRoomSpeed = 10;
+    public enum VisitCounterType { Entered, Seen };
+    public VisitCounterType VisitCountMode = VisitCounterType.Entered;
 
     public Room StartRoomPrefab;
     public SelectableRoomsAsset SelectableRooms;
+    public SelectableRoomsAsset AllowMultipleVisitsRooms;
     public SelectableRoomsAsset DoorChoosingRooms;
+    public Room DoorChoosingRoom_Final;
     public TransitionScreen transitionScreen;
+
+    public UnityEvent CollectableAquired;
 
     [HideInInspector]
     public Room CurrentRoom;
     public static DungeonManager Singleton;
     PlayerInput player;
+
+    public List<Room> VisitedRooms = new List<Room>();
+    public int roomNumber = 0;
 
     private void Awake() {
         Singleton = this;
@@ -28,18 +42,51 @@ public class DungeonManager : MonoBehaviour {
             GoToRoom(StartRoomPrefab);
     }
 
+    bool ListContainsRoom(Room querry, List<Room> haystack) {
+        return haystack.Contains(querry);
+        //foreach(Room other in haystack) {
+        //    // For some reason just comparing prefab references isn't consistent. // just kidding I was using the function that didn't check.
+        //    if(other.name == querry.name) return true;
+        //}
+        //return false;
+    }
     Room GetRandomRoom(SelectableRoomsAsset roomsAsset) {
         return roomsAsset.Rooms[Random.Range(0, roomsAsset.Rooms.Count)];
     }
-    public List<Room> GetNewRooms(int count) { // temp function. Don't select the same room more than once per run.
+    Room GetRandomUniqueRoom(SelectableRoomsAsset roomsAsset) {
+        Room selectedRoom = roomsAsset.Rooms[Random.Range(0, roomsAsset.Rooms.Count)];
+
+        if(!ListContainsRoom(selectedRoom, AllowMultipleVisitsRooms.Rooms)) {
+            if(ListContainsRoom(selectedRoom, VisitedRooms))
+                return GetRandomUniqueRoom(roomsAsset);
+            else if(VisitCountMode == VisitCounterType.Seen) {
+                print("Visited rooms does not contain " + selectedRoom.name);
+                VisitedRooms.Add(selectedRoom);
+            }
+        }
+
+        return selectedRoom;
+    }
+    public List<Room> GetRandomRooms(int count) {
         List<Room> newRooms = new List<Room>();
         for(int i = 0; i < count; i++) {
             newRooms.Add(GetRandomRoom(SelectableRooms));
         }
         return newRooms;
     }
+    public List<Room> GetNewRooms(int count) {
+        List<Room> newRooms = new List<Room>();
+        for(int i = 0; i < count; i++) {
+            newRooms.Add(GetRandomUniqueRoom(SelectableRooms));
+        }
+        return newRooms;
+    }
     public void GoToDoorSelectingRoom() {
-        GoToRoom(GetRandomRoom(DoorChoosingRooms));
+        roomNumber++;
+        if(CollectableBottle && CollectableKeyRing && CollectableStuffedBear)
+            GoToRoom(DoorChoosingRoom_Final);
+        else
+            GoToRoom(GetRandomRoom(DoorChoosingRooms));
     }
     public IEnumerator _EnterRoom(Room existingRoom, float enterSpeed = 0) {
         if (!player)
@@ -47,14 +94,12 @@ public class DungeonManager : MonoBehaviour {
         Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
         Door enterance = existingRoom.DoorEnterance;
         if(!enterance) {
-            Debug.LogWarning("Room " + existingRoom.name + " doesn't have an enterance door defined.");
+            //Debug.LogWarning("Room " + existingRoom.name + " doesn't have an enterance door defined.");
             player.gameObject.SetActive(true);
             yield break;
         }
 
         //float enterSpeed = playerRB.velocity.magnitude;
-        print(enterSpeed);
-
         player.gameObject.SetActive(false);
         // we move the player before they're enabled because the camera snaps to the
         // player's postion in rooms with CameraFollowsPlayer, even when the player is disabled.
@@ -74,13 +119,25 @@ public class DungeonManager : MonoBehaviour {
         StartCoroutine(_GoToRoom(roomPrefab));
     }
     IEnumerator _GoToRoom(Room roomPrefab) {
+        if (VisitCountMode == VisitCounterType.Entered) {
+            if (!ListContainsRoom(roomPrefab, AllowMultipleVisitsRooms.Rooms) )// && !VisitedRooms.Contains(roomPrefab))
+                VisitedRooms.Add(roomPrefab);
+        }
+
         if(!player)
             player = PlayerInput.Singleton;
 
         float enterSpeed = player.GetComponent<Rigidbody2D>().velocity.magnitude;
         //print("GOTOROOM player velocity: " + player.GetComponent<Rigidbody2D>().velocity.magnitude);
         player.gameObject.SetActive(false);
+
         yield return transitionScreen.Show();
+
+        // we move the player before they're enabled because the camera snaps to the
+        // player's postion in rooms with CameraFollowsPlayer, even when the player is disabled.
+        Door destinationEnterance = roomPrefab.DoorEnterance;
+        if (destinationEnterance)
+            player.transform.position = roomPrefab.DoorEnterance.SpawnPoint.transform.position;
 
         DestroyCurrentRoom();
         Room newRoom = Instantiate<Room>(roomPrefab);
@@ -96,5 +153,15 @@ public class DungeonManager : MonoBehaviour {
     }
     public void RestartDungeon() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void GiveBossCollectable(Interactable_Collectable.BossCollectableType collectable) {
+        if(collectable == Interactable_Collectable.BossCollectableType.BabyBottle)
+            CollectableBottle = true;
+        else if(collectable == Interactable_Collectable.BossCollectableType.KeyRing)
+            CollectableKeyRing = true;
+        else if(collectable == Interactable_Collectable.BossCollectableType.StuffedBear)
+            CollectableStuffedBear = true;
+
+        CollectableAquired.Invoke();
     }
 }
