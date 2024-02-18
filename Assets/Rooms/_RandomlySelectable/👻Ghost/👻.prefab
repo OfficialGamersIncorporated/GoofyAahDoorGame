@@ -207,6 +207,7 @@ MonoBehaviour:
   DeathScreenMessages:
   - Boo
   - One of us!
+  CameraFollowsPlayer: 0
 --- !u!114 &4273246194325310438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +225,10 @@ MonoBehaviour:
   - {fileID: 9012286624327270849}
   - {fileID: 2338897736659895861}
   - {fileID: 2434051617651068351}
+  PostFightElements: {fileID: 0}
+  ChallengeCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6272198105402709226
 GameObject:
   m_ObjectHideFlags: 0

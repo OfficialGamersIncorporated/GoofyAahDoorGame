@@ -340,6 +340,9 @@ MonoBehaviour:
   Units:
   - {fileID: 2513139773092684449}
   PostFightElements: {fileID: 0}
+  ChallengeCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8986335307956899132
 GameObject:
   m_ObjectHideFlags: 0

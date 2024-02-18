@@ -2222,6 +2222,9 @@ MonoBehaviour:
   - {fileID: 3288388917315939038}
   - {fileID: 4818113739602784125}
   PostFightElements: {fileID: 0}
+  ChallengeCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1796251096706397911
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -757,6 +757,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 70011536370441261}
   DoorEnterance: {fileID: 0}
+  DeathScreenMessages: []
+  CameraFollowsPlayer: 0
 --- !u!1001 &8600175984467730048
 PrefabInstance:
   m_ObjectHideFlags: 0
