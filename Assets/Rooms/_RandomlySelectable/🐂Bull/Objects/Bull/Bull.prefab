@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 3819143130700400679}
   - component: {fileID: 1223049465290122469}
   - component: {fileID: 1044037306052300797}
-  - component: {fileID: 3316959650334904914}
+  - component: {fileID: 6697092670340320386}
+  - component: {fileID: 2309073502197968984}
   m_Layer: 0
   m_Name: Bull
   m_TagString: Enemy
@@ -32,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4812785282983344518}
@@ -81,12 +82,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c8824fec129435140a4b67dcb53f1f6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c5bfceff8473334e8141669e96cb9ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3359375, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -105,8 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 50
-  Acceleration: 500
-  RecoveryTime: 2
+  Acceleration: 12
+  RecoveryTime: 1.5
+  WaitTime: 3
 --- !u!114 &3819143130700400679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,16 +121,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12a02219954b8f4cbe155ea6d4ef8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthCurrent: 5
-  HealthMax: 5
+  HealthCurrent: 8
+  HealthMax: 8
   DestroyOnDeath: 1
   GibsPrefabs:
-  - {fileID: 3424852697739229844, guid: 7290766cc2fa61c49bd2c7eed27a9899, type: 3}
-  - {fileID: 873363998245124295, guid: 5d232c5cc9d2da54d96a475ef6b07834, type: 3}
-  - {fileID: 6550590047966247637, guid: d161318efe5219f438cd8df3f94401ad, type: 3}
-  - {fileID: 8043970093141769341, guid: 5191c3f93dace204d966f6c831689216, type: 3}
-  - {fileID: -1680955864850376926, guid: a3142d1743e12cf41a702851da4dbd2a, type: 3}
-  - {fileID: 6107069362156295334, guid: d877928ebcd42db4092fb45aa8e9233e, type: 3}
+  - {fileID: 152146676936513828, guid: 72bd5d100ff99fa4b80894cf8db436f9, type: 3}
+  - {fileID: 5022644960055971359, guid: 0d0e4c8bc175b934ba592228528af94e, type: 3}
+  - {fileID: 3026384745637661794, guid: 074e15a6da8492743bfcbefd73e50305, type: 3}
+  - {fileID: 3683638607734766901, guid: fa58cef75be73a1429c819817623ac1f, type: 3}
   GibsMaxEjectionForce: 15
   GibsSpawnDistance: 1.5
   Died:
@@ -150,10 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  PhysicsImpulse: 15
+  PhysicsImpulse: 20
   Continuous: 1
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!50 &1044037306052300797
 Rigidbody2D:
   serializedVersion: 4
@@ -177,12 +178,12 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &3316959650334904914
-CircleCollider2D:
+--- !u!61 &6697092670340320386
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -216,7 +217,39 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.35
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.3359375, y: 2}
+    newSize: {x: 3.3359375, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3, y: 2}
+  m_EdgeRadius: 0
+--- !u!95 &2309073502197968984
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650520370740265779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5010df206e02ab4fbdfa04ca7c3d01c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &7866139559255167057
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2230,22 +2230,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3753843642613665507}
     m_Modifications:
-    - target: {fileID: 1044037306052300797, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: m_Mass
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223049465290122469, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: Continuous
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223049465290122469, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: PhysicsImpulse
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2592115963207152273, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: WaitTime
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3024988532362831833, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.5
@@ -2385,22 +2369,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3753843642613665507}
     m_Modifications:
-    - target: {fileID: 1043059150132365986, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044037306052300797, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: m_Mass
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223049465290122469, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: Continuous
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223049465290122469, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
-      propertyPath: PhysicsImpulse
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3024988532362831833, guid: 1e04116f1a17611418fa2f361990d691, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20

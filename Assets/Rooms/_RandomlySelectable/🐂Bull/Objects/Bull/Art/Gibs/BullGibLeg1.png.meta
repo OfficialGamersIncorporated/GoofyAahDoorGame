@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7e81763b89172b64f8050a4c4c52f011
+guid: ad7d9049632e7264e93614d14eeb86be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5334029084422798935
-    second: bullLeg3_0
+      213: 2215338164655140013
+    second: BullGibLeg1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullLeg3_0
+      name: BullGibLeg1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 47
-        height: 73
+        width: 134
+        height: 282
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a180610fc8b9f5b0800000000000000
-      internalID: -5334029084422798935
+      spriteID: daca2a9c2567ebe10800000000000000
+      internalID: 2215338164655140013
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bullLeg3_0: -5334029084422798935
+      BullGibLeg1_0: 2215338164655140013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

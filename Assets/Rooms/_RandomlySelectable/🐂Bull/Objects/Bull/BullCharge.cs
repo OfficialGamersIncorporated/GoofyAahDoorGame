@@ -19,16 +19,21 @@ public class BullCharge : MonoBehaviour
 
     GameObject target;
 
+    Animator anim;
+
     public float MaxSpeed = 50f;
     public float Acceleration = 500f;
     public float RecoveryTime = 2f;
     public float WaitTime = 1f;
+
+    float freezeTimer = 2f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
         target = GameObject.FindGameObjectWithTag("Player");
 
@@ -53,10 +58,22 @@ public class BullCharge : MonoBehaviour
         if (canCharge)
         {
             chargeVector = targetVector;
-            // Charge noise
+
             canCharge = false;
             currentlyCharging = true;
             recovering = false;
+            anim.SetBool("Running", true);
+
+            //Freeze check
+            if (rb.velocity.magnitude < 0.1f)
+            {
+                freezeTimer -= Time.deltaTime;
+                if (freezeTimer < 0)
+                {
+                    chargeVector = targetVector;
+                    freezeTimer = 2f;
+                }
+            }
         }
 
         if (rb.velocity.x > 0)
@@ -68,6 +85,8 @@ public class BullCharge : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
+
+        anim.SetFloat("VelocityMag", rb.velocity.magnitude);
 
     }
 
@@ -94,6 +113,7 @@ public class BullCharge : MonoBehaviour
 
     IEnumerator Recovery()
     {
+        anim.SetBool("Running", false);
         yield return new WaitForSeconds(RecoveryTime);
         rb.velocity = Vector2.zero;
         recovering = false;
@@ -104,96 +124,5 @@ public class BullCharge : MonoBehaviour
         yield return new WaitForSeconds(WaitTime);
         canCharge = true;
     }
-
-    // Face target
-    // Make sound
-    // Start charge
-    // Charge until hitting target or wall
-
-    //Collider2D col;
-    //Rigidbody2D rb;
-
-    //GameObject target;
-
-    //Vector2 targetDirection;
-    //Vector2 chargeVector;
-    //Vector2 lookVector;
-
-    //public float RotationOffset = -90;
-    //public float MaxSpeed = 10f;
-    //public float Acceleration = 2f;
-    //public float RecoveryTime = 1f;
-
-    //bool charging = false;
-    //bool canCharge = true;
-    //bool recovering = false;
-
-    //private void Start()
-    //{
-    //    rb = GetComponent<Rigidbody2D>();
-    //    col = GetComponent<Collider2D>();
-
-    //    target = GameObject.FindGameObjectWithTag("Player");
-    //}
-
-    //private void Update()
-    //{
-    //    if (!target) target = GameObject.FindGameObjectWithTag("Player");
-    //    if (!target)
-    //    {
-    //        canCharge = false;
-    //        return;
-    //    }
-    //    else if (!charging && !recovering)
-    //    {
-    //        canCharge = true;
-    //    }
-
-    //    targetDirection = (target.transform.position - transform.position);
-    //    lookVector = (target.transform.position - transform.position).normalized;
-    //    float targetAngle = (Mathf.Atan2(lookVector.y, lookVector.x) * Mathf.Rad2Deg) - RotationOffset;
-    //}
-
-    //private void FixedUpdate()
-    //{
-    //    if (canCharge && target != null)
-    //    {
-    //        StartCharge();
-    //    }
-
-
-    //    if (charging)
-    //    {
-    //        if (rb.velocity.magnitude < MaxSpeed && target != null)
-    //        {
-    //            rb.AddForce(Vector2.ClampMagnitude(chargeVector, Acceleration), ForceMode2D.Force);
-    //        }
-
-    //    }
-
-
-
-    //}
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    charging = false;
-    //    StartCoroutine(Recover());
-    //}
-
-    //void StartCharge()
-    //{
-    //    recovering = false;
-    //    charging = true;
-    //    canCharge = false;
-    //    chargeVector = targetDirection;
-    //}
-
-    //IEnumerator Recover()
-    //{
-    //    recovering = true;
-    //    yield return new WaitForSeconds(RecoveryTime);
-    //    canCharge = true;
-    //}
 
 }
