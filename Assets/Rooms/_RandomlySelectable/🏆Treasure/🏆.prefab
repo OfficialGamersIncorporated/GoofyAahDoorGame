@@ -323,7 +323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 967116541237940289}
   DoorEnterance: {fileID: 7545556797236702834}
-  DeathScreenMessages: []
+  DeathScreenMessages:
+  - THERE BLOOD. THERES BLOOD IN THE BOX!
+  - "What a nice gift \U0001F970"
   CameraFollowsPlayer: 0
 --- !u!114 &3124312332484400260
 MonoBehaviour:

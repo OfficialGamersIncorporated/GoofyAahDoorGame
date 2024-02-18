@@ -11502,7 +11502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 6382491641107754130}
   DoorEnterance: {fileID: 7000980448892876571}
-  DeathScreenMessages: []
+  DeathScreenMessages:
+  - Watch out for spikes
   CameraFollowsPlayer: 1
 --- !u!114 &6202398612199000565
 MonoBehaviour:

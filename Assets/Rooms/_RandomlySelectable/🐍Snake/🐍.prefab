@@ -961,6 +961,7 @@ MonoBehaviour:
   DeathScreenMessages:
   - ssssssssssssssssssssssssssssssssss
   - womp womp
+  - Tanner doesn't like this room.
   CameraFollowsPlayer: 0
 --- !u!114 &6047950820866683849
 MonoBehaviour:

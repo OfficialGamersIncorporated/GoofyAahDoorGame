@@ -140,7 +140,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 7109729198481448070}
   DoorEnterance: {fileID: 598794655024653168}
-  DeathScreenMessages: []
+  DeathScreenMessages:
+  - CONTAINMENT BREACH
+  - Is it a rat, a cat, or a sheep? You decide.
+  - Skill issue?
   CameraFollowsPlayer: 0
 --- !u!114 &5048287566281301386
 MonoBehaviour:

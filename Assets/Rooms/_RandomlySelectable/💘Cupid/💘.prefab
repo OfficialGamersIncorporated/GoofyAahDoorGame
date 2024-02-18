@@ -52,7 +52,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorExit: {fileID: 1308244457952837235}
   DoorEnterance: {fileID: 9171608317736430614}
-  DeathScreenMessages: []
+  DeathScreenMessages:
+  - "\u2665"
+  - ahahahh get shit on
+  - No valentines?
   CameraFollowsPlayer: 0
 --- !u!114 &3852448518246128679
 MonoBehaviour:
