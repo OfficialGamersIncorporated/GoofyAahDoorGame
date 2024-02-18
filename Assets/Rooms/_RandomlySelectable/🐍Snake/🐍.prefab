@@ -961,6 +961,7 @@ MonoBehaviour:
   DeathScreenMessages:
   - ssssssssssssssssssssssssssssssssss
   - womp womp
+  CameraFollowsPlayer: 0
 --- !u!114 &6047950820866683849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +980,10 @@ MonoBehaviour:
   - {fileID: 9192362564987753110}
   - {fileID: 8451777775595736005}
   - {fileID: 2469396068310246905}
+  PostFightElements: {fileID: 0}
+  ChallengeCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &479304114047829241
 PrefabInstance:
   m_ObjectHideFlags: 0

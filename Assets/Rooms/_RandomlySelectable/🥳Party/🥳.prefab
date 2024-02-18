@@ -105,6 +105,7 @@ MonoBehaviour:
   DoorExit: {fileID: 6164976894409668858}
   DoorEnterance: {fileID: 1028503354207054119}
   DeathScreenMessages: []
+  CameraFollowsPlayer: 0
 --- !u!114 &3196064075476897642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +125,10 @@ MonoBehaviour:
   - {fileID: 8923642159495360021}
   - {fileID: 3798722319381796276}
   - {fileID: 2152133866063704630}
+  PostFightElements: {fileID: 0}
+  ChallengeCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3627724095547912099
 GameObject:
   m_ObjectHideFlags: 0

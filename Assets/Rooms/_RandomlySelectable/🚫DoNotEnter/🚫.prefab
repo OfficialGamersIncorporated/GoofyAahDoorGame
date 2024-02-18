@@ -178,6 +178,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8377962196645718555
 AudioSource:
   m_ObjectHideFlags: 0
@@ -453,6 +454,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3107065548704539235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -728,6 +730,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3546354075195720922
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1337,6 +1340,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1341464831060128007
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1946,6 +1950,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1768546339731449662
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2221,6 +2226,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4716375195255301875
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2643,6 +2649,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8714902244918238493
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2918,6 +2925,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3751331053497960598
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3694,6 +3702,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &947255071993659110
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3969,6 +3978,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7714504279303887703
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4411,6 +4421,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4549704612407123965
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4686,6 +4697,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &263286558203579435
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4961,6 +4973,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2450632246036020698
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5236,6 +5249,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7573983126985268375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5511,6 +5525,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2294061991080429733
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5786,6 +5801,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &6759995208519389924
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6896,6 +6912,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7822332689806634818
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7171,6 +7188,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7375719113692999143
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7446,6 +7464,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4616217005520715528
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7888,6 +7907,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8544090147623468643
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8497,6 +8517,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1307735062895406002
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8939,6 +8960,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4240398488336016553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9381,6 +9403,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7722642667478330470
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9656,6 +9679,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &5390327377721199687
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10265,6 +10289,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1373524023734246814
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10874,6 +10899,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2487317997656011477
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11149,6 +11175,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7567096256197672272
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12939,6 +12966,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &90344763497987270
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13548,6 +13576,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8444879718006746203
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13823,6 +13852,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &882118448577042699
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14265,6 +14295,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2164117151151144460
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14707,6 +14738,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7058319561710548585
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14982,6 +15014,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2788907025379628212
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15591,6 +15624,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2939934846053855871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16470,6 +16504,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8294821664853487117
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16745,6 +16780,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4556825667597836932
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17187,6 +17223,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1005973726073433864
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17796,6 +17833,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7793421851647549034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18071,6 +18109,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &268055659750090376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18346,6 +18385,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3404688554736244825
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18955,6 +18995,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1928339230351761060
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19230,6 +19271,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8905569381467726781
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19672,6 +19714,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1079554482064743666
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21170,6 +21213,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7079447041696097759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21445,6 +21489,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &6009273527462401962
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21720,6 +21765,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3832144122373833292
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21995,6 +22041,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &6619419433524361841
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22270,6 +22317,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3265238718348931093
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22545,6 +22593,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7231882151076158407
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22820,6 +22869,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2729125918625253826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23262,6 +23312,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4906013456313469179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23537,6 +23588,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &1729529999473890096
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23812,6 +23864,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &6746375120551741075
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24087,6 +24140,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &7620690421923378133
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24362,6 +24416,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &6951806305951555250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24971,6 +25026,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2385762753847231131
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25413,6 +25469,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &3662155294950095817
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25688,6 +25745,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &656383165205229973
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26297,6 +26355,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4221373266834059793
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26572,6 +26631,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &2701069093633570596
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27014,6 +27074,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8909732617564506008
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27289,6 +27350,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &8523377935159489361
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27731,6 +27793,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &5148723996642488919
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28006,6 +28069,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &5621258120206495708
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28782,6 +28846,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &4717427864053646844
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29391,6 +29456,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &6682294851756876692
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29833,6 +29899,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &844686462218302220
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30108,6 +30175,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &734096473687577915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30383,6 +30451,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &583725284637105697
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30992,6 +31061,7 @@ MonoBehaviour:
   Continuous: 0
   HitEnemies: 0
   HitAllies: 1
+  SelfDestroyOnContact: 0
 --- !u!82 &214506787104854884
 AudioSource:
   m_ObjectHideFlags: 0

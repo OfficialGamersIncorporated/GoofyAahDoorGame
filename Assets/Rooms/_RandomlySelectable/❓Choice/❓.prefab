@@ -68,6 +68,8 @@ MonoBehaviour:
   WrongDoors:
   - {fileID: 5791230292114321028}
   - {fileID: 4285833453655306218}
+  HintTextObject: {fileID: 0}
+  IncorrectGuessHintThreshold: 8
   SelfPrefab: {fileID: 0}
 --- !u!1 &2435533349132756806
 GameObject:
