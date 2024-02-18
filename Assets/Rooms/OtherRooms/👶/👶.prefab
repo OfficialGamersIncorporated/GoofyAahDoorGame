@@ -3993,17 +3993,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 194518907109216078}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToCredits
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreditScreenInitiator, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      propertyPath: DoorEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2637616380674667854, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 194518907109216078}
   m_SourcePrefab: {fileID: 100100000, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+--- !u!1 &2980664626868460627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2637616380674667854, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
+  m_PrefabInstance: {fileID: 992974105152874781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &194518907109216078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980664626868460627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a12382b9b0a544084d106594dcbd5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8819892849497418672 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8620256241098244781, guid: 32a102793d54a404eaf4610eb9e71b4f, type: 3}
   m_PrefabInstance: {fileID: 992974105152874781}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2980664626868460627}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de26523953014e34faf48f0cf2220068, type: 3}
