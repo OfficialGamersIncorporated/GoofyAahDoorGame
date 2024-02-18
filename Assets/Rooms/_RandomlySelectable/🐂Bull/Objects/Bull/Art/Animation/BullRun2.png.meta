@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d8ac7113830aca44396f1fc21a9a2ce4
+guid: e77aff2b897ad46499c629810383d730
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4042710266282786978
-    second: bullHead_0
+      213: 8318355446694492252
+    second: BullRun2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullHead_0
+      name: BullRun2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 98
-        height: 101
+        x: 1
+        y: 29
+        width: 805
+        height: 483
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a04c9761979a1830800000000000000
-      internalID: 4042710266282786978
+      spriteID: c5839abc43cb07370800000000000000
+      internalID: 8318355446694492252
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bullHead_0: 4042710266282786978
+      BullRun2_0: 8318355446694492252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,9 +13,7 @@ public class RoomLogicStopGo : RoomLogic
 
     bool spawningBombs = false;
 
-    [SerializeField] GameObject bomb;
-    [SerializeField] GameObject bombSpawnPoint;
-    public int numberOfBombs = 50;
+    [SerializeField] GameObject bombs;
     [SerializeField] GameObject trafficLight;
     SpriteRenderer lightSpriteRenderer;
     [SerializeField] Sprite redLight;
@@ -45,7 +43,7 @@ public class RoomLogicStopGo : RoomLogic
             {
                 if (!spawningBombs)
                 {
-                    SpawnBombs(numberOfBombs);
+                    SpawnBombs();
                 }
                 
             }
@@ -73,20 +71,15 @@ public class RoomLogicStopGo : RoomLogic
         }
         else if (green)
         {
-            lightTimer = 0.5f;
+            lightTimer = 0.65f;
             ChangeYellow();
         }
     }
 
-    void SpawnBombs(int bombsToSpawn)
+    void SpawnBombs()
     {
         spawningBombs = true;
-        for (int i = 0; i < bombsToSpawn; i++)
-        {
-            GameObject spawnedBomb = Instantiate(bomb, bombSpawnPoint.transform.position, Quaternion.identity);
-            spawnedBomb.transform.parent = gameObject.transform;
-            spawnedBomb.GetComponent<Rigidbody2D>().AddForce(UnityEngine.Random.insideUnitCircle * UnityEngine.Random.Range(0.5f, 50f), ForceMode2D.Force);
-        }
+        bombs.SetActive(true);
     }
 
     void ChangeRed()
