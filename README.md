@@ -1,8 +1,8 @@
 ![LogoBanner](https://github.com/OfficialGamersIncorporated/GoofyAahDoorGame/assets/32988106/b8bcdac9-a824-4915-86cb-f915e1823610)
 
-DOORIA! is rogue-like a game made for Brackeys Game Jam 2024.1 in which you explore rooms behind doors labeled with emoji.
+DOORIA! is a rogue-like game made in one week for Brackeys Game Jam 2024.1 in which you explore rooms behind doors labeled with emoji. The game ranked #15 for most fun out of nearly 800 entries.
 
-Battle bosses and a random assortment of other things that sometimes aren't hostile through room after room, searching for the keys to the final boss.
+Battle bosses and a random assortment of other things that are at least sometimes hostile through room after room, searching for the keys to the final boss.
 
 <p align="center">
  <img src="https://github.com/OfficialGamersIncorporated/GoofyAahDoorGame/assets/32988106/951ca9f8-3915-4091-8062-d99f0a77bcfc" width="100" height="100" align="center">
