@@ -13,6 +13,12 @@ The game can be played on itch.io in the web browser or downloaded from the rele
 
 <img src="https://github.com/OfficialGamersIncorporated/GoofyAahDoorGame/assets/32988106/906b0d77-7754-4972-9ffd-0d7c3b73efe0" width="16" height="16"> [Play on itch.io](https://pc-hris.itch.io/dooria)
 
+### Interesting technical notes
+* The game is made up of many building block components such as a generic AI, hitboxes, hurtboxes, health handlers, etc. that can be mixed and matched to make novel functionality without writing new code.
+* The AI script has a handful of values that can be used to make novel and unique movement patterns without writing a new script for every enemy by using simple sin waves.
+* The bow weapon shoots projectiles that have AI components attached to them to make them seek targets and move in loops. They also have health components so they can be destroyed.
+* Objects with health components have a list of "gibs" (gore bits) that get spawned and spread around them when they die. The emoji room places smaller emoji enemies as the larger enemies gibs so that killing a large emoji will split it into smaller ones without writing any bespoke code.
+
 </br></br></br></br>
 
 <img src="https://github.com/OfficialGamersIncorporated/GoofyAahDoorGame/assets/32988106/b8ee0bae-a70c-402a-943a-eed67ee2094f" width="480" height="270">
